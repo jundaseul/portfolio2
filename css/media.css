@@ -404,6 +404,19 @@
     .loginbtn input {
         width: 48.5vw;
     }
+
+    /*contact 페이지*/
+    #contact_wrap {
+        width: 77%;
+    }
+
+    .contact_title {
+        margin-left: -9%;
+    }
+
+    .contact_title::before {
+        width: 49px;
+    }
 }
 
 /*550px이하*********************************************************/
@@ -499,6 +512,27 @@
     .loginbtn input {
         width: 56.5vw;
     }
+
+    /*contact 페이지*/
+    #contact_wrap {
+        width: 80%;
+        padding-top: 15.5%;
+        padding-bottom: 35%;
+    }
+
+    .contact_title::before {
+        width: 45px;
+        vertical-align: 10px;
+    }
+
+    .contact_title {
+        font-size: 8vw;
+    }
+
+    .contact_right {
+        margin-top: 35%;
+    }
+
 }
 
 
@@ -553,8 +587,7 @@
 
     /*상단 박스*/
     .info.container {
-        width: 100%;
-        display: flex;
+        display: flex;    
     }
 
     /*푸터상단 li들*/
@@ -589,6 +622,10 @@
         text-align: right;
         bottom: 5px;
     }
+    
+    .info.container li{
+        margin-right: 17px;
+    }
 
 
     /*로그인팝업*/
@@ -596,6 +633,54 @@
     .container li {
         margin-right: 0;
     }
+
+    
+    
+}
+
+
+/*모바일기준*/
+/*380px이하*********************************************************/
+@media only screen and (max-width:380px) {
+
+    /*contact 페이지*/
+    #contact_wrap {
+        width: 100%;
+    }
+
+    .contact_title {
+        margin-left: 2%;
+        font-size: 9vw;
+    }
+
+
+    .contact_title::before {
+        width: 40px;
+    }
+
+    .contact_box {
+        padding: 0;
+    }
+
+    .contact_left {
+        width: 100%;
+    }
+
+    .contact_right,
+    .contact_left p {
+        padding: 0 5%;
+    }
+
+    .contact_left p {
+        padding-top: 2%;
+    }
+
+    #sendbtn {
+        right: 5%;
+    }
+
+
+
 
 
 }
