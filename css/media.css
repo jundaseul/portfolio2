@@ -1,0 +1,601 @@
+@charset "utf-8";
+/* reindeer 미디어쿼리 - media.css */
+
+/*1500px이하*********************************************************/
+@media only screen and (max-width:1500px) {
+    .login {
+        width: 30%;
+    }
+
+    .l_input input {
+        width: 17vw;
+    }
+}
+
+/*1400px이하*********************************************************/
+@media only screen and (max-width:1400px) {
+
+    /*1.메인*/
+    /*룩북 버튼*/
+    #lbbox > .lbtn {
+        width: 23%;
+        height: 8%;
+        font-size: 1.7vw;
+        line-height: 72px;
+    }
+
+}
+
+
+/*1350px이하*********************************************************/
+@media only screen and (max-width:1350px) {
+
+    /*2.로그인팝업*/
+    .login {
+        width: 35%;
+        height: 35vh;
+    }
+
+    .l_input input {
+        width: 20vw;
+    }
+
+}
+
+/*1200px이하*********************************************************/
+@media only screen and (max-width:1200px) {
+
+    /*1.메인*/
+    /*Top버튼*/
+    #tbtn img {
+        width: 33%;
+        vertical-align: -5px;
+    }
+
+    /*2.메뉴팝업창*/
+    .menu_txt_area {
+        width: 30%;
+    }
+
+    .menu_bg {
+        width: 70%;
+    }
+
+    .menu_txt a {
+        font-size: 4vw;
+    }
+
+    .menu_txt a:hover {
+        font-size: 4.8vw;
+    }
+
+
+    /*3.로그인팝업*/
+    .login {
+        width: 37%;
+        height: 35vh;
+    }
+
+    .l_input input {
+        width: 21.5vw;
+    }
+
+
+    /*4. contact 페이지*/
+
+    .contact_title {
+        font-size: 4.5vw;
+        margin-left: -5%;
+    }
+
+    .contact_box {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .contact_left {
+        flex: 4;
+        margin-right: 130px;
+        height: 40vh;
+        margin-right: 2%;
+        margin-top: 2%;
+    }
+
+    .contact_img {
+        width: 100%;
+    }
+
+    .contact_left p {
+        text-align: right;
+    }
+
+    .contact_right {
+        padding-top: 5%;
+        /* display: block; */
+        margin-top: 13%;
+    }
+}
+
+
+/*1000px이하*********************************************************/
+@media only screen and (max-width:1000px) {
+
+    /*1.메인*/
+    /*배너 슬라이드*/
+    .ban #ban {
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    /*2.메뉴팝업창*/
+    .menu_txt_area {
+        width: 35%;
+    }
+
+    .menu_bg {
+        width: 65%;
+    }
+
+    .menu_txt a {
+        font-size: 4.9vw;
+    }
+
+    .menu_txt a:hover {
+        font-size: 5.3vw;
+    }
+
+    /*2.로그인팝업*/
+    .login {
+        width: 43%;
+        height: 34vh;
+    }
+
+    .l_input input {
+        width: 25.5vw;
+    }
+
+    /*3.contact 페이지*/
+    .contact_title {
+        font-size: 5.5vw;
+        margin-left: -7%;
+    }
+
+
+}
+
+
+/*830px이하*********************************************************/
+@media only screen and (max-width:830px) {
+
+    /*로그인팝업*/
+    .login {
+        width: 44%;
+        height: 42vh;
+        padding: 3.2% 2.2%;
+    }
+
+    .login_bottom {
+        display: block;
+        padding-bottom: 0;
+    }
+
+    .l_input input {
+        width: 39.5vw;
+    }
+
+    .loginbtn input {
+        width: 39.5vw;
+        height: 5vh;
+        margin-top: 10px;
+    }
+
+
+    /*contact 페이지*/
+
+    #contact_wrap {
+        padding-top: 7.5%;
+        padding-bottom: 20%;
+    }
+
+    .contact_right {
+        margin-top: 20%;
+    }
+
+
+
+}
+
+
+
+/*800px이하*********************************************************/
+@media only screen and (max-width:800px) {
+
+    /*1.메인*/
+    /*배너*/
+    #ban > .slide_btn {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /*룩북 버튼*/
+    #lbbox > .lbtn {
+        width: 29%;
+        font-size: 2.1vw;
+        line-height: 70px;
+    }
+
+
+    /*2.메뉴 팝업창*/
+    .menu_txt_area {
+        width: 100%;
+        z-index: 9999;
+        background: none;
+
+    }
+
+    /*우측 배경*/
+    .menu_bg {
+        width: 100%;
+        opacity: .6;
+    }
+
+    /*글씨영역 박스*/
+    .menu_txt_area {
+        padding: 15% 10%;
+    }
+
+    /*글씨*/
+    .menu_txt a {
+        font-size: 9vw;
+    }
+
+    /*호버시*/
+    .menu_txt a:hover {
+        font-size: 11vw;
+    }
+
+    .menu_txt {
+        line-height: 130px;
+    }
+
+    /*닫기버튼*/
+    .cbtn {
+        z-index: 99999999;
+    }
+
+
+    /*푸터*/
+    .footer_top {
+        padding: 8% 0;
+    }
+
+    .info1 {
+        margin-right: 130px;
+    }
+
+    /*탑버튼*/
+    #tbtn {
+        width: 60px;
+        height: 60px;
+    }
+
+
+}
+
+
+
+/*770px이하*********************************************************/
+@media only screen and (max-width:770px) {
+
+    /*로그인팝업*/
+    .login {
+        width: 44%;
+        height: 42vh;
+        padding: 3.2% 2.2%;
+    }
+
+    .login_bottom {
+        display: block;
+        padding-bottom: 0;
+    }
+
+    .l_input input {
+        width: 39.5vw;
+    }
+
+    .loginbtn input {
+        width: 39.5vw;
+        height: 5vh;
+        margin-top: 10px;
+    }
+
+    .login_top p:nth-child(1) {
+        padding-bottom: 5px;
+    }
+
+    .break {
+        display: block;
+    }
+
+
+    /*contact 페이지*/
+    .contact_title {
+        font-size: 6.5vw;
+        margin-left: -10%;
+    }
+
+}
+
+
+/*660px이하*********************************************************/
+@media only screen and (max-width:660px) {
+
+
+    /*1.메인*/
+
+    /*룩북 버튼*/
+    #lbbox > .lbtn {
+        width: 37%;
+        font-size: 2.8vw;
+    }
+
+    /*푸터 패딩*/
+    .footer_top {
+        padding: 10% 0;
+    }
+
+    #tbtn {
+        right: 60px;
+        bottom: 115px;
+    }
+
+    .footer_bottom {
+        height: calc(430px - 84%);
+    }
+
+    /*로고*/
+    .footer_logo {
+        position: absolute;
+        text-align: right;
+        right: 0;
+    }
+
+    .footer_bottom > p {
+        text-align: right;
+        bottom: 5px;
+    }
+
+
+    /*로그인팝업*/
+    .login {
+        width: 50%;
+        height: 43vh;
+    }
+
+    .l_input input,
+    .loginbtn input {
+        width: 45.5vw;
+    }
+
+
+    /*contact 페이지*/
+    .contact_right {
+        margin-top: 28%;
+    }
+
+    .contact_title {
+        font-size: 7.5vw;
+        margin-left: -12%;
+    }
+}
+
+
+/*580px이하*********************************************************/
+@media only screen and (max-width:580px) {
+
+    /*로그인팝업*/
+    .login {
+        width: 53%;
+    }
+
+    .l_input input,
+    .loginbtn input {
+        width: 48.5vw;
+    }
+}
+
+/*550px이하*********************************************************/
+@media only screen and (max-width:550px) {
+
+    html {
+        font-size: 15.5px;
+    }
+
+    /*1.헤더*/
+    /*gnb 숨기기*/
+    .gnb {
+        display: none;
+    }
+
+    /*헤더 패딩 조절*/
+    .top {
+        padding: 0 4%;
+    }
+
+    .logo {
+        margin: 0 auto;
+        padding-right: 30px;
+    }
+
+    /*장바구니아이콘 보이게*/
+    .header_cart {
+        display: block;
+    }
+
+    /*2.메인*/
+
+    /*룩북 버튼*/
+    #lbbox > .lbtn {
+        width: 47%;
+        font-size: 3.6vw;
+    }
+
+
+    /*3.푸터*/
+    #footer {
+        height: 395px;
+    }
+
+    .footer_top {
+        height: 73%;
+        padding: 10% 2%;
+    }
+
+    .info1 {
+        padding-left: 0;
+    }
+
+    .footer_bottom {
+        height: calc(390px - 80%);
+    }
+
+    .footer_logo {
+        font-size: 1.7rem;
+    }
+
+    .footer_bottom > p {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        transform: translateX(0);
+        text-align: right;
+        letter-spacing: -0.4px;
+    }
+
+    #tbtn {
+        width: 50px;
+        height: 50px;
+        right: 38px;
+        bottom: 130px;
+    }
+
+    /*4.메뉴팝업*/
+    .menu_gnb {
+        display: block;
+    }
+
+}
+
+/*450px이하*********************************************************/
+@media only screen and (max-width:450px) {
+    .login {
+        width: 63%;
+        padding: 3.2% 3.2%;
+    }
+
+    .l_input input,
+    .loginbtn input {
+        width: 56.5vw;
+    }
+}
+
+
+/*430px이하*********************************************************/
+@media only screen and (max-width:430px) {
+
+    /*1.메뉴팝업*/
+    /*글씨영역 박스*/
+    .menu_txt_area {
+        padding: 15% 13%;
+    }
+
+    /*글씨*/
+    .menu_txt a {
+        font-size: 11vw;
+    }
+
+    /*호버시*/
+    .menu_txt a:hover {
+        font-size: 14vw;
+    }
+
+    .menu_txt {
+        line-height: 115px;
+    }
+
+    /*메뉴팝업 gnb*/
+    .menu_gnb {
+        font-size: 6.3vw;
+    }
+
+    .menu_gnb a:hover {
+        font-size: 7.5vw;
+    }
+
+    .menu_gnb li {
+        line-height: 38px;
+    }
+
+
+    /*2.푸터*/
+    /*푸터 상단*/
+    .footer_top {
+        padding: 10% 0;
+        flex-direction: column;
+    }
+
+    .intit {
+        letter-spacing: 2px;
+        padding-bottom: 8px;
+    }
+
+    /*상단 박스*/
+    .info.container {
+        width: 100%;
+        display: flex;
+    }
+
+    /*푸터상단 li들*/
+    .container p,
+    .container li {
+        display: block;
+        margin-right: 5%;
+        text-align: center;
+    }
+
+    /*푸터 상단*/
+    .info1 {
+        margin-right: 0;
+        margin-bottom: 25%;
+    }
+
+    /*탑버튼*/
+    #tbtn {
+        width: 45px;
+        height: 45px;
+        right: 30px;
+        bottom: 128px;
+    }
+
+    /*로고*/
+    .footer_logo {
+        font-size: 1.5rem;
+        left: 215px;
+    }
+
+    .footer_bottom > p {
+        text-align: right;
+        bottom: 5px;
+    }
+
+
+    /*로그인팝업*/
+    .container p,
+    .container li {
+        margin-right: 0;
+    }
+
+
+}

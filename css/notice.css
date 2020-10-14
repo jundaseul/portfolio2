@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* notice.css - 공지사항 */
+
+/*notice 영역*/
+
+/*공지 전체 영역 섹션*/
+.notice_wrap{
+    margin-top: 90px;
+}
+
+/*공지 전체 영역*/
+#notice_wrap {
+    width: 63%;
+    height: 100%;
+    margin: 0 auto;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #333;
+    font-size: 1.0625rem;
+    padding: 8.5% 2% 17% 2%;
+}
+
+
+/*notice 타이틀*/
+.notice_title {
+    position: relative;
+    font-size: 2.1875rem;
+    margin-left: -3%;
+    margin-bottom: 58px;
+}
+/*타이틀 선*/
+.notice_title::before {
+    content: '';
+    display: inline-block;
+    width: 36px;
+    height: 1px;
+    background-color: #000;
+    vertical-align: 10px;
+    margin-right: 1.3%;
+}
+
+/*공지 전체 박스*/
+.notice {
+    width: 100%;
+    padding: 0 2%;
+}
+/*공지 공통*/
+.notice ol{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    padding: 0 2%;
+}
+.notice li {
+    align-items: center;
+}
+
+
+/*하단선 공통*/
+.notice_1, .notice_2{
+    border-bottom: 1px solid #ccc;
+}
+.notice_3{
+    border-bottom: 1px solid #999;
+}
+
+/*공지 1*/
+.notice_1{
+    border-top: 1px solid #999;
+    width: 100%;
+}
+
+/*공지 순번*/
+.notNum {
+    width: 60px;
+}
+/*공지 내용(버튼포함)*/
+.notCont{
+    position: relative;
+    width: calc(100% - 60px);
+}
+
+/*공지 제목*/
+.notName {
+    display: inline-block;
+    color: #333;
+}
+
+/*플러스버튼*/
+.pbtn img {
+    position: absolute;
+    right: 0;
+    width: 18px;
+}
+
+/*클릭시 나타나는 답변영역*/
+.notAns {
+    padding: 50px;
+    border-top: 1px solid #e5e5e5;
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 1rem;
+    display: none;
+}

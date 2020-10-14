@@ -1,0 +1,216 @@
+@charset "utf-8";
+/* prodpage.css - 제품 상세페이지 */
+
+/*제품 상세페이지 박스*/
+#prod_wrap {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 90px;
+    padding: 7% 0 20% 0;
+}
+
+/*좌측 제품이미지 영역 ******************************************************************/
+.prodImg_box {
+    position: relative;
+    width: 65%;
+    /*    margin: 0 auto;*/
+/*    outline: 1px solid blue;*/
+}
+
+.prodMore {
+    border-top: 1px solid #ddd;
+    padding-top: 10%;
+}
+
+/*이미지 공통!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.pImg {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.pImg1 {
+    width: 25vw;
+    height: 55vh;
+    background-image: url(../images/prodpage/earing/1.jpg);
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 15%;
+    margin-top: 3%;
+}
+
+.pImg2 {
+    width: 42vw;
+    height: 43vh;
+    background-image: url(../images/prodpage/earing/2.jpg);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+/*제품 설명영역 *****************************************************/
+.prodCmt_box {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 6%;
+    padding-bottom: 35%;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.prodCmt_box h3 {
+    font-size: 1.75rem;
+    font-style: italic;
+    color: #814719;
+    font-weight: 800;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.prodCmt {
+    font-size: 1.25rem;
+    text-align: justify;
+    line-height: 40px;
+    color: #333;
+    font-weight: 400;
+}
+
+.prodCmt h5 {
+    display: inline-block;
+    width: 135px;
+    font-weight: 500;
+}
+
+
+/* 이미지 3,4번 그룹*/
+.pImggr {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25%;
+}
+
+.pImg3,
+.pImg4 {
+    width: 17vw;
+    height: 53vh;
+}
+
+.pImg3 {
+    background-image: url(../images/prodpage/earing/3.jpg);
+    margin-top: -10%;
+    margin-right: 2%;
+}
+
+.pImg4 {
+    background-image: url(../images/prodpage/earing/4.jpg);
+}
+
+.pImg5 {
+    width: 42vw;
+    height: 39vh;
+    background-image: url(../images/prodpage/earing/5.jpg);
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20%;
+}
+
+
+/*이미지 6,7,8 그룹*/
+.pImggr2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pImg6 {
+    width: 16vw;
+    height: 47vh;
+    margin-right: 2.3%;
+}
+
+.pImg7,
+.pImg8 {
+    width: 17vw;
+    height: 50vh;
+    margin-bottom: 6%;
+}
+
+.pImg6 {
+    background-image: url(../images/prodpage/earing/6.jpg);
+}
+
+.pImg7 {
+    background-image: url(../images/prodpage/earing/7.jpg);
+}
+
+.pImg8 {
+    background-image: url(../images/prodpage/earing/8.jpg);
+}
+
+
+
+
+/*우측 고정영역 ******************************************************************/
+.prodInfo_box {
+    position: fixed;
+    width: 35%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-top: 90px;
+    outline: 1px solid lime;
+}
+
+.prodInfo {
+    position: fixed;
+    padding: 5% 0 0 3%;
+}
+
+.prodInfo_tit_wrap {
+    padding-bottom: 35px;
+}
+
+/*상품명*/
+.prodInfo_tit {
+    display: inline-block;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+/*베스트*/
+.prodBest {
+    display: inline-block;
+    width: 48px;
+    height: 20px;
+    line-height: 20px;
+    background-color: #F63442;
+    text-align: center;
+    color: #fff;
+    font-size: 0.75rem;
+    vertical-align: 2px;
+    margin-left: 20px;
+}
+
+/*가격*/
+.prodPrice {
+    font-size: 1rem;
+    padding-bottom: 10px;
+}
+
+/*컬러*/
+.prodSelec {
+    display: inline-block;
+    padding-right: 15px;
+}
+
+/*옵션선택박스*/
+#option {
+    border: 1px solid #707070;
+    padding: 1px 15px;
+    font-family: 'Noto Sans KR', sans-serif;
+}

@@ -1,0 +1,178 @@
+@charset "utf-8";
+/* store.css - store 페이지 */
+
+
+/*store 영역*/
+#lookbook_wrap.store_wrap{
+/*    position: relative;*/
+    /*width: 1200px;
+    max-width: 100%;*/
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    font-size: 1.0625rem;
+    padding: 13% 2% 17% 2%;
+}
+
+.notice_title.lb2 {
+    margin-top: 0;
+    width: 1400px;
+    margin: 2% auto;    
+}
+
+
+/*스토어 컨텐츠 내용*/
+.store_cont{
+}
+
+/*카테고리박스(하단선)*/
+.store_cate_box{
+    width: 75%;
+    margin: 0 auto;
+    border-bottom: 1px solid #ddd;
+}
+
+/*카테고리*/
+.store_cate{
+    width: 25%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;    
+    padding-bottom: 32px;   
+    text-align: center;
+}
+.store_cate li{
+    position: relative;
+    width: 33.33%;    
+}
+
+.store_cate a:hover{
+    font-weight: 600;
+/*    color: #4f2814;*/
+/*    font-style: italic;*/
+}
+
+.store_cate li:nth-child(1)::after, .store_cate li:nth-child(2)::after, .store_cate li:nth-child(3)::after{
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 10px;
+    background: #6A6A6A;
+    top: 55%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+/*활성화된 카테고리*/
+.cate_active{
+    text-align: center;
+    font-size: 48px;
+    font-weight: normal;
+    padding: 120px 0 80px 0;
+}
+
+/*베스트아이템 *****************************************/
+/*베스트아이템 전체박스*/
+.store_best{
+    margin-top: 30px;
+}
+
+/*타이틀*/
+.besttit{
+    text-align: center;
+    font-size: 1.375rem;
+    font-weight: normal;
+}
+
+
+/*이미지박스*/
+#gallery, .gallery {
+    display: flex; 
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 50px auto;
+    outline: 1px solid lime;
+    text-align: center;
+}
+
+/*이미지박스*/
+.photobox, .gallery .photobox{
+    position: relative;
+    /*부모자격*/
+    width: 23%;
+/*    height: 505px;*/
+    cursor: pointer;
+/*    margin-right: 2.5%;*/
+    margin: 0 1% 2% 1%;
+    overflow: hidden;
+    /*넘치는 자식요소 숨김*/
+}
+
+.photobox img {
+    width: 100%;
+    height: 100%;
+}
+
+/*커버*/
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .3;
+}
+
+/*설명박스*/
+.txt {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    /*밖으로 나가있게 세팅 -> hover시 70%로 올라오게 할것*/
+    height: 18%;
+    color: #333;
+    text-align: center;
+    white-space: nowrap;
+    /*줄바꿈방지*/
+    background-color: rgba(255, 255, 255, 0.5);
+    /*오버레이 효과*/
+    padding: 3% 0;
+}
+
+/*설명박스 타이틀*/
+.txttitle{
+    font-size: 0.9375rem;
+    padding-bottom: 9px;
+}
+
+.txtcollec, .txtprice{
+    font-size: 0.875rem;
+    letter-spacing: 0.3px;
+}
+
+.txtprice{
+    padding-top: 4px;
+    font-weight: 500;
+}
+
+
+
+/*All셋팅박스***************************/
+.store_best.all{
+    padding-top: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+

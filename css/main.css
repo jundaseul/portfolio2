@@ -1,0 +1,181 @@
+@charset "utf-8";
+/* main.css - 메인페이지 CSS */
+
+/* 파일 merging(합치기) */
+@import url(reset.css);
+@import url(core.css);
+@import url(common.css);
+@import url(notice.css);
+@import url(contact.css);
+/*@import url(lookbook.css);*/
+@import url(store.css);
+@import url(prodpage.css);
+@import url(member.css);
+@import url(media.css);
+
+
+
+/*배너*/
+/*#ban {
+    position: absolute;
+    bottom: 12%;
+    left: 8%;
+    width: 92%;
+    height: 88%;
+    overflow: hidden;
+}*/
+#ban {
+    position: relative;
+    bottom: 0;
+    left: 8%;
+    width: 92%;
+    height: 88%;
+    
+}
+
+/*슬라이드*/
+/*.slide {
+    position: relative;
+    width: 300%;
+    height: 100%;
+    display: flex;
+}*/
+.slide {
+    position: relative;    
+    height: 100%;
+}
+
+/*.slide li {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+}*/
+.slide li {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity .7s ease-in;
+}
+.slide li.on {
+    /*class가 "on"인 li*/
+    opacity: 1;
+    z-index: 1;
+    /*맨위로 오게*/
+}
+
+.slide li:nth-child(1) {
+    background: url(../images/ban_01.jpg) no-repeat bottom/cover;
+}
+
+.slide li:nth-child(2) {
+    background: url(../images/ban_02.jpg) no-repeat top/cover;
+}
+
+.slide li:nth-child(3) {
+    background: url(../images/ban_03.jpg) no-repeat bottom/cover;
+}
+
+/*배너 블릿 버튼*/
+.slide_btn {
+    position: absolute;
+    left: 3%;
+    bottom: 4.5%;
+    z-index: 1;
+    text-align: center;
+    display: block;
+}
+
+.slide_btn li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.slide_btn li.on {
+    background-color: #444;
+}
+
+
+/*메인룩북페이지 **********************/
+.lookbox {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/lb_intro.jpg) no-repeat center/cover;
+}
+
+.bg {
+    background-color: rgba(0, 0, 0, 0.3);
+    /*살짝 투명한 검정으로 배경색*/
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;    
+}
+
+
+
+
+/* 룩북 버튼 ************************************************************/
+.lbtn {
+    position: absolute;
+    width: 18%;
+    height: 7%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #fff;
+    font-size: 1.3vw;
+    font-weight: 500;
+    font-style: italic;
+/*    color: #fff;*/
+    text-align: center;
+    letter-spacing: 0.6px;
+    line-height: 63px;
+/*    transition: all 0.3s;*/
+}
+/*
+
+.lbtn:hover{
+    background-color: #fff;
+}
+
+*/
+
+#lbbox > a {
+    color: #fff;
+   overflow: hidden;
+    display: inline-block;
+}
+#lbbox > a span{
+    position: relative;
+   display: inline-block;
+    -webkit-transition: -webkit-transform 0.3s;
+   -moz-transition: -moz-transform 0.3s;
+   transition: transform 0.3s;
+}
+#lbbox > a span::before{
+    position: absolute;
+    top:100%;
+    content: attr(data-hover);
+/*    font-weight: bold;*/
+    color: #fff;
+    -webkit-transform: translate3d(0,0,0);
+   -moz-transform: translate3d(0,0,0);
+   transform: translate3d(0,0,0);
+    white-space: nowrap;
+}
+#lbbox > a:hover span,
+#lbbox > a:focus span{
+    -webkit-transform: translateY(-100%);
+   -moz-transform: translateY(-100%);
+   transform: translateY(-100%);
+}
