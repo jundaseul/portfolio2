@@ -1,13 +1,12 @@
 /* store js */
 
-    
-    /* store ***************************************/
+
+/* store ***************************************/
 
 /*베스트 아이템*/
 
 $(function () { //////////// jQB //////////////////////
-    //console.log("로딩완료");
-
+    
     // 분류명
     var cat = "earring";
 
@@ -104,8 +103,7 @@ $(function () { //////////// jQB //////////////////////
         ]
 
     };
-    
-    
+
     // 이미지 설명글 셋팅하기 //
     var msg2 = {
         "earring": [
@@ -273,15 +271,15 @@ $(function () { //////////// jQB //////////////////////
         ]
 
     };
-    
-    
-    
+
+
+
     // 각 All박스 이미지 개수 셋팅
     var gabox = {
-        "earring":9,
-        "ring":7,
-        "bracelet":8,
-        "necklace":7
+        "earring": 9,
+        "ring": 7,
+        "bracelet": 8,
+        "necklace": 7
     };
 
     /// 1. 포토박스의 html 생성 및 초기화, 캡션글 넣기
@@ -301,7 +299,7 @@ $(function () { //////////// jQB //////////////////////
 
         for (var i = 0; i < msg[cat].length; i++) {
             $("#gallery").append(
-                '<div class="photobox">' +
+                '<div class="photobox swiper-slide">' +
                 '<img src="images/store/' + cat + '/' + (i + 1) + '.jpg" alt="' + cat + '">' +
                 '<span class="cobox"></span>' +
                 '<span class="txt">' +
@@ -336,11 +334,10 @@ $(function () { //////////// jQB //////////////////////
                     top: "100%"
                 }, 300); /// animate //////
             }); ////////// hover ///////////////////
-        
-        
-        
+
+
         //////////////////// All 셋팅
-        
+
         // 새로비우기
         $(".gallery").html("");
 
@@ -349,15 +346,15 @@ $(function () { //////////// jQB //////////////////////
                 '<div class="photobox">' +
                 '<img src="images/store/' + cat + '/all/' + (i + 1) + '.jpg" alt="' + cat + '">' +
                 '<span class="cobox"></span>' +
-               '<span class="txt">' +
+                '<span class="txt">' +
                 '<h4 class="txttitle">' + msg2[cat][i]["상품코드"] + '</h4>' +
                 '<p class="txtcollec">' + msg2[cat][i]["컬렉션명"] + '</p>' +
                 '<p class="txtprice">' + msg2[cat][i]["가격"] + '</p>' +
-               '</span>' +
+                '</span>' +
                 '</div>'
             );
         } /// for ////////////////////////////////////
-        
+
         // 2. 포토박스에 마우스 오버/아웃시 변경효과주기
         // 대상 : .photobox
         // hover(함수1,함수2)
@@ -420,7 +417,6 @@ $(function () { //////////// jQB //////////////////////
     /*모든 아이템*/
 
 
-
     // 카테고리 메뉴 클릭시 변경하기 ///
     $(".store_cate a").click(function (e) {
         e.preventDefault();
@@ -441,8 +437,83 @@ $(function () { //////////// jQB //////////////////////
         $(this).parent().addClass("hdn")
             .siblings().removeClass("hdn");
 
+        // 4. 새로 리스트를 for문으로 생성한 경우 
+        //   기존 링크가 상실되기때문에 링크 셋팅함수를 
+        // 다시한번 호출하여 링크 설정을 재로드한다!
+        setLink();
+
 
     }); ///////// click //////////////
+    /////////////////////////////////////////////////
+    ////// 상품 아이템 클릭시 상세페이지로 이동하기 ///////
+    // 대상: .photobox
+    var setLink = function () {
+        $(".photobox").click(function () {
+
+            var tit = $(".txttitle", this).text();
+            var col = $(".txtcollec", this).text().replace(/'/g, "");
+            var pri = $(".txtprice", this).text();
+            var isrc = "'" + $("img", this).attr("src") + "'";
+
+            console.log("값:" + tit + "^" + col + "^" + pri + "^" + isrc);
+
+            // 파라미터를 가지고 상세페이지로 이동!
+            location.href = "prodpage.html?tit=" + escape(tit) + "&col=" + escape(col) + "&pri=" + escape(pri) + "&cat=" + cat + "&isrc=" + escape(isrc);
+
+
+        }); //////////// click //////////////
+    } ////////// setLink함수 ///////////////////////
+
+    // 최초호출
+    setLink();
+
+
     
+    // 모바일일때 BEST ITEM 리스트에 Swiper 플러그인 적용하기!
+    if (mob) {
+        console.log("모바일");
+        $('.swiper-wrapper').css({
+            flexWrap: "nowrap"
+        });
+        $('.swiper-slide').css({
+            display: "flex",
+//            height: "50vh"
+        });       
+        $('#gallery').css({
+           width: "100%"
+        });      
+        $('#gallery .photobox').css({
+           margin:"0"
+        });
+        $('.swiper-button-next, .swiper-button-prev').css({
+            display:"block"
+        });
+
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView:1,
+            spaceBetween: 20,
+            navigation: { // 네비게이션 설정
+                nextEl: '.swiper-button-next', // 다음 버튼 클래스명
+                prevEl: '.swiper-button-prev', // 이번 버튼 클래스명
+            },
+            breakpoints: {
+                640:{
+                    slidesPerView:"2"
+                },
+                768:{
+                    slidesPerView:"2"
+                }
+            },
+            
+        });
+        
+
+    } ////// if ////////////////////////////////////////
+    
+
+
+
+
+
 }); ///////////// jQB ///////////////////////////////
 /////////////////////////////////////////////////////

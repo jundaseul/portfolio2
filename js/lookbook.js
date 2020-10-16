@@ -1,11 +1,6 @@
 /* lookbook js */
 
 
-/*룩북 상세페이지 이미지 플러그인 ********************************/
-var mob = 0;
-if ($(window).width() < 800) mob = 1;
-console.log("모바일?" + mob);
-
 
 $(function () { //////////// jQB //////////////////////
     console.log("로딩완료");

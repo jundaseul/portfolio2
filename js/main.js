@@ -2,6 +2,7 @@
 
 $(function () { //////////// jQB //////////////////////
     //console.log("로딩완료");
+    
 
     $("#fullpage").fullpage({
         autoScrolling: true,

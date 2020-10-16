@@ -9,7 +9,6 @@
     <!-- jQuery library -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/prodpage.js"></script>
 </head>
@@ -114,11 +113,11 @@
     <!--제품 상세페이지-->
     <section id="prod_wrap">
         <div class="prodImg_box">
-            <div class="pImg pImg1"></div>
+            <div class="pImg pImg1 pdv"></div>
             <div class="prodMore">
-                <div class="pImg pImg2"></div>
+                <div class="pImg pImg2 pdv"></div>
                 <div class="prodCmt_box">
-                    <h3>'Le Morocco Collection'</h3>
+                    <h3>'<span class="pdvt">Le Morocco Collection</span>'</h3>
                     <ul class="prodCmt">
                         <li>
                             <h5>Size</h5>
@@ -139,34 +138,37 @@
                     </ul>
                 </div>
                 <div class="pImggr">
-                    <div class="pImg pImg3"></div>
-                    <div class="pImg pImg4"></div>
+                    <div class="pImg pImg3 pdv"></div>
+                    <div class="pImg pImg4 pdv"></div>
                 </div>
-                <div class="pImg pImg5"></div>
+                <div class="pImg pImg5 pdv"></div>
                 <div class="pImggr2">
-                    <div class="pImg pImg6"></div>
+                    <div class="pImg pImg6 pdv"></div>
                     <div class="pImggr2-1">
-                        <div class="pImg pImg7"></div>
-                        <div class="pImg pImg8"></div>
+                        <div class="pImg pImg7 pdv"></div>
+                        <div class="pImg pImg8 pdv"></div>
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <!--우측 영역-->
         <div class="prodInfo_box">
             <div class="prodInfo">
                 <div class="prodInfo_tit_wrap">
-                    <h5 class="prodInfo_tit">'MRC-ER49'(Le Morocco Collection)</h5>
+                    <h5 class="prodInfo_tit">
+                        <span class="pdvt">'MRC-ER49'</span>
+                        (<span class="pdvt">Le Morocco Collection</span>)
+                    </h5>
                     <span class="prodBest">best</span>
                 </div>
-                <p class="prodPrice">KRW 178,000</p>
+                <p class="prodPrice pdvt">KRW 178,000</p>
                 <p class="prodSelec">COLOR</p>
                 <select name="option" id="option">
                     <option value="ot1">- [필수]옵션을 선택해주세요. -</option>
-                    <option value="gold">gold</option>                    
-                    <option value="silver">silver</option>                    
-                    <option value="rosegold">rosegold</option>                    
+                    <option value="gold">gold</option>
+                    <option value="silver">silver</option>
+                    <option value="rosegold">rosegold</option>
                 </select>
             </div>
         </div>
@@ -175,7 +177,7 @@
 
 
     <!--푸터-->
-    
+
     <div class="footer">
         <footer class="inbox" id="footer">
             <div class="footer_top">
@@ -213,6 +215,4 @@
 
 
 
-</body>
-
-</html>
+</body></html>

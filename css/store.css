@@ -45,7 +45,7 @@
 }
 .store_cate li{
     position: relative;
-    width: 33.33%;    
+    padding: 0 20px;
 }
 
 .store_cate a:hover{
@@ -54,7 +54,7 @@
 /*    font-style: italic;*/
 }
 
-.store_cate li:nth-child(1)::after, .store_cate li:nth-child(2)::after, .store_cate li:nth-child(3)::after{
+.store_cate li+li::after{
     position: absolute;
     content: '';
     width: 1px;
@@ -62,7 +62,10 @@
     background: #6A6A6A;
     top: 55%;
     transform: translateY(-50%);
-    right: 0;
+    left: 0;
+}
+.store_cate li.hdn:first-child+li::after{
+    display: none;
 }
 
 /*활성화된 카테고리*/
@@ -96,6 +99,8 @@
     outline: 1px solid lime;
     text-align: center;
 }
+
+
 
 /*이미지박스*/
 .photobox, .gallery .photobox{
@@ -165,6 +170,21 @@
 .store_best.all{
     padding-top: 10%;
 }
+
+
+
+
+
+
+/* 베스트아이템 화살표 숨기기 */
+.swiper-button-next, .swiper-button-prev{
+    display: none;
+}
+
+
+
+
+
 
 
 

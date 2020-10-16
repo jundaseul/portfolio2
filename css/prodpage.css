@@ -35,7 +35,7 @@
 .pImg1 {
     width: 25vw;
     height: 55vh;
-    background-image: url(../images/prodpage/earing/1.jpg);
+    background-image: url(../images/prodpage/earring/1.jpg);
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: 15%;
@@ -45,7 +45,7 @@
 .pImg2 {
     width: 42vw;
     height: 43vh;
-    background-image: url(../images/prodpage/earing/2.jpg);
+    background-image: url(../images/prodpage/earring/2.jpg);
     left: 50%;
     transform: translateX(-50%);
 }
@@ -101,19 +101,19 @@
 }
 
 .pImg3 {
-    background-image: url(../images/prodpage/earing/3.jpg);
+    background-image: url(../images/prodpage/earring/3.jpg);
     margin-top: -10%;
     margin-right: 2%;
 }
 
 .pImg4 {
-    background-image: url(../images/prodpage/earing/4.jpg);
+    background-image: url(../images/prodpage/earring/4.jpg);
 }
 
 .pImg5 {
     width: 42vw;
     height: 39vh;
-    background-image: url(../images/prodpage/earing/5.jpg);
+    background-image: url(../images/prodpage/earring/5.jpg);
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: 20%;
@@ -141,15 +141,15 @@
 }
 
 .pImg6 {
-    background-image: url(../images/prodpage/earing/6.jpg);
+    background-image: url(../images/prodpage/earring/6.jpg);
 }
 
 .pImg7 {
-    background-image: url(../images/prodpage/earing/7.jpg);
+    background-image: url(../images/prodpage/earring/7.jpg);
 }
 
 .pImg8 {
-    background-image: url(../images/prodpage/earing/8.jpg);
+    background-image: url(../images/prodpage/earring/8.jpg);
 }
 
 

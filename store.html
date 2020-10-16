@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Reindeer - store</title>
     <!-- jQuery library -->
@@ -68,10 +69,16 @@
                     </ul>
                 </div>
                 <h1 class="cate_active">earring</h1>
-                <div class="store_best">
+                <div class="store_best swiper-container">
                     <h4 class="besttit">BEST ITEM</h4>
                     <!--스토어 이미지박스-->
-                    <div id="gallery"></div>
+                    <div id="gallery" class="swiper-wrapper"></div>
+
+                    <!-- Add Pagination -->
+                    <!--                    <div class="swiper-pagination"></div>-->
+                    <!-- 네비게이션 버튼 (모바일에서만보이기)-->
+                    <div class="swiper-button-next swiper-button-black"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+                    <div class="swiper-button-prev swiper-button-black"></div><!-- 이전 버튼 -->
                 </div>
                 <div class="store_best all">
                     <h4 class="besttit all">ALL ITEM</h4>

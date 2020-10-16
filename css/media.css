@@ -282,6 +282,12 @@
     }
 
 
+    /*메뉴팝업창 닫기버튼*/
+    .cbtn {
+        right: 5%;
+        width: 28px;
+    }
+
 }
 
 
@@ -494,8 +500,71 @@
         bottom: 130px;
     }
 
-    /*4.메뉴팝업*/
+    /*모바일버전 메뉴팝업창*/
+    .menu_txt_area {
+        padding: 30% 10%;
+    }
+
+    .menu_txt {
+        line-height: 110px;
+    }
+
+    .menu_txt a {
+        font-size: 10.3vw;
+    }
+
+    .menu_txt a:hover {
+        font-size: 13vw;
+    }
+
     .menu_gnb {
+        display: block;
+        font-size: 5.5vw;
+        margin-top: 13%;
+    }
+
+    .menu_gnb a:hover {
+        font-size: 7vw;
+    }
+
+    /*5.로그인팝업창 보이기*/
+    .login {
+        width: 100vw;
+        height: 100vh;
+        padding: 20% 10%;
+    }
+
+    .break {
+        display: inline-block;
+    }
+
+    .login_top p:first-child {
+        font-size: 2.3rem;
+    }
+
+    .login_top p:last-child {
+        padding-top: 3%;
+        font-size: 1rem;
+    }
+
+    .l_input input,
+    .loginbtn input {
+        width: 78.5vw;
+        height: 5vh;
+    }
+
+    .loginbtn #lobtn {
+        height: 5.5vh;
+        font-size: 0.9rem;
+    }
+
+    .logpopup_join {
+        font-size: 1.125rem;
+        right: 13%;
+    }
+
+    /*닫기버튼 나타나게*/
+    .logcbtn {
         display: block;
     }
 
@@ -533,7 +602,56 @@
         margin-top: 35%;
     }
 
+
+    /*모바일버전 메뉴팝업창*/
+    .menu_txt_area {
+        padding: 30% 10%;
+    }
+
+    .menu_txt {
+        line-height: 100px;
+    }
+
+    .menu_txt a {
+        font-size: 11.9vw;
+    }
+
+    .menu_txt a:hover {
+        font-size: 15vw;
+    }
+
+    .menu_gnb {
+        display: block;
+        font-size: 6.4vw;
+        margin-top: 13%;
+    }
+
+    .menu_gnb a:hover {
+        font-size: 9vw;
+    }
+
+
+
+    /*모바일버전 로그인팝업창*/
+    .login {
+        width: 100vw;
+        padding: 25% 10%;
+    }
+
+    .login_top p:last-child {
+        font-size: 1.06rem;
+    }
+
+    .l_input input,
+    .loginbtn input {
+        width: 79.5vw;
+    }
+
+    .logpopup_join {
+        font-size: 1.12rem;
+    }
 }
+
 
 
 /*430px이하*********************************************************/
@@ -587,7 +705,7 @@
 
     /*상단 박스*/
     .info.container {
-        display: flex;    
+        display: flex;
     }
 
     /*푸터상단 li들*/
@@ -615,15 +733,14 @@
     /*로고*/
     .footer_logo {
         font-size: 1.5rem;
-        left: 215px;
     }
 
     .footer_bottom > p {
         text-align: right;
         bottom: 5px;
     }
-    
-    .info.container li{
+
+    .info.container li {
         margin-right: 17px;
     }
 
@@ -634,8 +751,31 @@
         margin-right: 0;
     }
 
-    
-    
+    /*메뉴 팝업창*/
+    .menu_txt_area {
+        padding: 30% 13%;
+    }
+
+    .menu_txt a {
+        font-size: 12.5vw;
+    }
+
+    .menu_txt a:hover {
+        font-size: 15.5vw;
+    }
+
+    .menu_gnb li {
+        line-height: 43px;
+    }
+
+    .menu_gnb {
+        font-size: 6.8vw;
+    }
+
+    .menu_gnb a:hover {
+        font-size: 8.5vw;
+    }
+
 }
 
 
