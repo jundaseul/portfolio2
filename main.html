@@ -19,184 +19,181 @@
 
 <body>
 
-
-    <div class="wrap">
-        <!--메뉴 박스-->
-        <div id="menu">
-            <div class="menu_txt_area">
-                <ul class="menu_txt">
-                    <li><a href="#">STORE</a></li>
-                    <li><a href="lookbook.html">LOOKBOOK</a></li>
-                    <li><a href="notice.html">NOTICE</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
-                <ul class="menu_gnb">
-                    <li><a href="#login_wrap" class="gnb_menu log">LOGIN</a></li>
-                    <li><a href="member.html" class="gnb_menu">JOIN</a></li>
-                </ul>
-            </div>
-            <ul class="menu_bg">
-                <li class="on"></li>
-                <li></li>
-                <li></li>
-                <li></li>
+    <!--메뉴 박스-->
+    <div id="menu">
+        <div class="menu_txt_area">
+            <ul class="menu_txt">
+                <li><a href="store.html">STORE</a></li>
+                <li><a href="lookbook.html">LOOKBOOK</a></li>
+                <li><a href="notice.html">NOTICE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
-            <!--닫기버튼-->
-            <a href="#" class="cbtn"><img src="images/close_btn.png" alt="닫기버튼"></a>
+            <ul class="menu_gnb">
+                <li><a href="#login_wrap" class="gnb_menu log">LOGIN</a></li>
+                <li><a href="member.html" class="gnb_menu">JOIN</a></li>
+            </ul>
         </div>
+        <ul class="menu_bg">
+            <li class="on"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <!--닫기버튼-->
+        <a href="#" class="cbtn"><img src="images/close_btn.png" alt="닫기버튼"></a>
+    </div>
 
 
-        <!--장바구니 팝업-->
-        <section id="cart_wrap">
-            <div id="cart">
-                <div class="cart">
-                    <a href="#"><img src="images/close_btn.png" alt="닫기버튼" class="cart_cbtn"></a>
-                    <div class="cart_box">
-                        <h4 class="cart_title">Cart</h4>
-                        <ul class="cart_categoty">
-                            <li>Item</li>
-                            <li>Quantity</li>
-                            <li>Price</li>
+    <!--장바구니 팝업-->
+    <section id="cart_wrap">
+        <div id="cart">
+            <div class="cart">
+                <a href="#"><img src="images/close_btn.png" alt="닫기버튼" class="cart_cbtn"></a>
+                <div class="cart_box">
+                    <h4 class="cart_title">Cart</h4>
+                    <ul class="cart_categoty">
+                        <li>Item</li>
+                        <li>Quantity</li>
+                        <li>Price</li>
+                    </ul>
+                    <div class="cart_list_box">
+                        <ul class="cart_list">
+                            <li></li>
+                            <li class="list_name"><a href="#">MRC-ER49<br><small>[ 옵션 - gold ]</small></a></li>
+                            <li>1</li>
+                            <li>178,000</li>
                         </ul>
-                        <div class="cart_list_box">
-                            <ul class="cart_list">
-                                <li></li>
-                                <li class="list_name"><a href="#">MRC-ER49<br><small>[ 옵션 - gold ]</small></a></li>
-                                <li>1</li>
-                                <li>178,000</li>
-                            </ul>
-                            <!--                        <a href="#" class="delbtn"><img src="images/minus.png" alt="삭제버튼"></a>-->
-                            <label for="delcheck" class="check_label">
-                                <input type="checkbox" class="delcheck" id="delcheck">
-                                <span class="bullet_checkbox"></span>
-                            </label>
-                            <p class="cart_msg">The cart is empty.</p>
-                        </div>
-                        <div class="cart_total">
-                            <p>Total</p>
-                            <p class="cartprice">KRW 178,000</p>
-                        </div>
-                        <button class="delbtn cart_btn">Delete</button>
-                        <button class="cart_btn">Order</button>
+                        <!--                        <a href="#" class="delbtn"><img src="images/minus.png" alt="삭제버튼"></a>-->
+                        <label for="delcheck" class="check_label">
+                            <input type="checkbox" class="delcheck" id="delcheck">
+                            <span class="bullet_checkbox"></span>
+                        </label>
+                        <p class="cart_msg">The cart is empty.</p>
                     </div>
+                    <div class="cart_total">
+                        <p>Total</p>
+                        <p class="cartprice">KRW 178,000</p>
+                    </div>
+                    <button class="delbtn cart_btn">Delete</button>
+                    <button class="cart_btn">Order</button>
                 </div>
             </div>
-        </section>
-
-        <!--로그인팝업-->
-        <section class="container">
-            <div id="login_wrap" class="login_wrap">
-                <div class="login">
-                    <div class="login_top">
-                        <p>LOGIN</p>
-                        <p>가입시 입력하신 <span class="break">아이디와 비밀번호를 입력하세요.</span></p>
-                    </div>
-                    <div class="login_bottom">
-                        <div class="l_input">
-                            <div class="id">
-                                <input type="text" id="id" maxlength="30" placeholder="ID">
-                            </div>
-                            <div class="pw">
-                                <input type="password" id="pw" maxlength="20" placeholder="PASSWORD">
-                            </div>
-                        </div>
-                        <div class="loginbtn">
-                            <input type="button" id="lobtn" value="Login">
-                        </div>
-                    </div>
-                    <a href="member.html" class="logpopup_join">Join us</a>
-                    <!--닫기버튼-->
-                    <a href="#" class="logcbtn"><img src="images/close_btn.png" alt="닫기버튼"></a>
-                </div>
-            </div>
-        </section>
-
-
-        <!--상단영역-->
-        <div class="top">
-            <header class="inbox" id="header">
-                <a href="#" class="header_cart"><img src="images/cart_black.png" alt="장바구니버튼"></a>
-                <!--로고-->
-                <h1 class="logo">
-                    <a href="/">reindeer</a>
-                </h1>
-                <!--gnb 메뉴-->
-                <nav class="gnb_wrap">
-                    <ul class="gnb">
-                        <li><a href="#login_wrap" class="gnblogin">LOGIN</a></li>
-                        <li><a href="member.html">JOIN</a></li>
-                        <li><a href="#" class="cartbtn">CART</a></li>
-                    </ul>
-                    <a href="#" class="menubtn mbtn1"><img src="images/menu_bar_2.png" alt="메뉴버튼"></a>
-                </nav>
-            </header>
         </div>
+    </section>
 
-
-        <div id="fullpage">
-            <!--배너-->
-            <section class="page ban section">
-                <div id="ban">
-                    <!--배너 이미지-->
-                    <ul class="slide">
-                        <li class="on"></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <!--배너 블릿 버튼-->
-                    <ul class="slide_btn">
-                        <li class="on"></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+    <!--로그인팝업-->
+    <section class="container">
+        <div id="login_wrap" class="login_wrap">
+            <div class="login">
+                <div class="login_top">
+                    <p>LOGIN</p>
+                    <p>가입시 입력하신 <span class="break">아이디와 비밀번호를 입력하세요.</span></p>
                 </div>
-            </section>
+                <div class="login_bottom">
+                    <div class="l_input">
+                        <div class="id">
+                            <input type="text" id="id" maxlength="30" placeholder="ID">
+                        </div>
+                        <div class="pw">
+                            <input type="password" id="pw" maxlength="20" placeholder="PASSWORD">
+                        </div>
+                    </div>
+                    <div class="loginbtn">
+                        <input type="button" id="lobtn" value="Login">
+                    </div>
+                </div>
+                <a href="member.html" class="logpopup_join">Join us</a>
+                <!--닫기버튼-->
+                <a href="#" class="logcbtn"><img src="images/close_btn.png" alt="닫기버튼"></a>
+            </div>
+        </div>
+    </section>
 
-            <!--룩북-->
-            <section class="page lookbox section">
-                <div id="lbbox">
-                    <div class="bg"></div>
-                    <!--<a href="#" class="lbtit">
+
+    <!--상단영역-->
+    <div class="top">
+        <header class="inbox" id="header">
+            <a href="#" class="header_cart"><img src="images/cart_black.png" alt="장바구니버튼"></a>
+            <!--로고-->
+            <h1 class="logo">
+                <a href="/">reindeer</a>
+            </h1>
+            <!--gnb 메뉴-->
+            <nav class="gnb_wrap">
+                <ul class="gnb">
+                    <li><a href="#login_wrap" class="gnblogin">LOGIN</a></li>
+                    <li><a href="member.html">JOIN</a></li>
+                    <li><a href="#" class="cartbtn">CART</a></li>
+                </ul>
+                <a href="#" class="menubtn mbtn1"><img src="images/menu_bar_2.png" alt="메뉴버튼"></a>
+            </nav>
+        </header>
+    </div>
+
+
+    <div id="fullpage">
+        <!--배너-->
+        <section class="page ban section">
+            <div id="ban">
+                <!--배너 이미지-->
+                <ul class="slide">
+                    <li class="on"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <!--배너 블릿 버튼-->
+                <ul class="slide_btn">
+                    <li class="on"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </section>
+
+        <!--룩북-->
+        <section class="page lookbox section">
+            <div id="lbbox">
+                <div class="bg"></div>
+                <!--<a href="#" class="lbtit">
                 Fragments Lookbook
             </a>-->
-                    <a href="lookbook.html" class="lbtn bg1">
-                        <span data-hover="Fragments Lookbook">Fragments Lookbook</span>
-                    </a>
-                </div>
-            </section>
-
-            <!--푸터-->
-            <div class="footer section fp-auto-height">
-                <footer class="inbox" id="footer">
-                    <div class="footer_top">
-                        <div class="info1">
-                            <h4 class="intit">COMPANY</h4>
-                            <ul class="company info container">
-                                <li><a href="#" class="underline">Showrooms</a></li>
-                                <li><a href="#" class="underline">Guide</a></li>
-                                <li><a href="#" class="underline">Privacy Policy</a></li>
-                            </ul>
-                        </div>
-                        <div class="info2">
-                            <h4 class="intit">SOCIAL</h4>
-                            <ul class="info2 info container">
-                                <li><a href="#" class="underline">Instagram</a></li>
-                                <li><a href="#" class="underline">Facebook</a></li>
-                                <li><a href="#" class="underline">Youtube</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="footer_bottom">
-                        <h2 class="footer_logo">reindeer</h2>
-                        <p>@2020 Copyright (c) All rights reserved.</p>
-                    </div>
-
-                    <!--따라오는 TOP메뉴-->
-                    <button id="tbtn">
-                        <img src="images/arrow_top.png" alt="top버튼">
-                    </button>
-                </footer>
+                <a href="lookbook.html" class="lbtn bg1">
+                    <span data-hover="Fragments Lookbook">Fragments Lookbook</span>
+                </a>
             </div>
+        </section>
+
+        <!--푸터-->
+        <div class="footer section fp-auto-height">
+            <footer class="inbox" id="footer">
+                <div class="footer_top">
+                    <div class="info1">
+                        <h4 class="intit">COMPANY</h4>
+                        <ul class="company info container">
+                            <li><a href="#" class="underline">Showrooms</a></li>
+                            <li><a href="#" class="underline">Guide</a></li>
+                            <li><a href="#" class="underline">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="info2">
+                        <h4 class="intit">SOCIAL</h4>
+                        <ul class="info2 info container">
+                            <li><a href="#" class="underline">Instagram</a></li>
+                            <li><a href="#" class="underline">Facebook</a></li>
+                            <li><a href="#" class="underline">Youtube</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <h2 class="footer_logo">reindeer</h2>
+                    <p>@2020 Copyright (c) All rights reserved.</p>
+                </div>
+
+                <!--따라오는 TOP메뉴-->
+                <button id="tbtn">
+                    <img src="images/arrow_top.png" alt="top버튼">
+                </button>
+            </footer>
         </div>
     </div>
 

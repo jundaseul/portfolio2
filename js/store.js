@@ -6,7 +6,7 @@
 /*베스트 아이템*/
 
 $(function () { //////////// jQB //////////////////////
-    
+
     // 분류명
     var cat = "earring";
 
@@ -467,49 +467,96 @@ $(function () { //////////// jQB //////////////////////
     // 최초호출
     setLink();
 
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 
     
+    
+    
+    
+    
+    var mob = 0;
+    var winWidth;
+    if ($(window).width() < 800) mob = 1;
+    console.log("모바일?" + mob);
+
+    mobSwiper();
+
+    $(window).resize(function () {
+
+        //window.location.reload(); -> 자동새로고침(단점:계속 위로올라가서 시작함)
+                winWidth = $(window).width();
+                console.log(winWidth);
+                winWidth < 800 ? mob = 1 : mob = 0;
+                mobSwiper();
+    });
+
+    //$(".swiper-wrapper").load(window.location.href + ".swiper-wrapper");
     // 모바일일때 BEST ITEM 리스트에 Swiper 플러그인 적용하기!
-    if (mob) {
-        console.log("모바일");
-        $('.swiper-wrapper').css({
-            flexWrap: "nowrap"
-        });
-        $('.swiper-slide').css({
-            display: "flex",
-//            height: "50vh"
-        });       
-        $('#gallery').css({
-           width: "100%"
-        });      
-        $('#gallery .photobox').css({
-           margin:"0"
-        });
-        $('.swiper-button-next, .swiper-button-prev').css({
-            display:"block"
-        });
 
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView:1,
-            spaceBetween: 20,
-            navigation: { // 네비게이션 설정
-                nextEl: '.swiper-button-next', // 다음 버튼 클래스명
-                prevEl: '.swiper-button-prev', // 이번 버튼 클래스명
-            },
-            breakpoints: {
-                640:{
-                    slidesPerView:"2"
+    function mobSwiper() {
+
+
+
+
+        // 모바일일때 BEST ITEM 리스트에 Swiper 플러그인 적용하기!
+        if (mob) {
+            console.log("모바일");
+            $('.swiper-wrapper').css({
+                flexWrap: "nowrap"
+            });
+            $('.swiper-slide').css({
+                display: "flex",
+                //            height: "50vh"
+            });
+            $('#gallery').css({
+                width: "100%"
+            });
+            $('#gallery .photobox').css({
+                margin: "0"
+            });
+            $('.swiper-button-next, .swiper-button-prev').css({
+                display: "block"
+            });
+
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                navigation: { // 네비게이션 설정
+                    nextEl: '.swiper-button-next', // 다음 버튼 클래스명
+                    prevEl: '.swiper-button-prev', // 이번 버튼 클래스명
                 },
-                768:{
-                    slidesPerView:"2"
-                }
-            },
-            
-        });
-        
+                breakpoints: {
+                    640: {
+                        slidesPerView: "2",
+                        spaceBetween: "30"
+                    },
+                    768: {
+                        slidesPerView: "2",
+                        spaceBetween: "40",
+                        
+                    },
+                    801: {
+                        slidesPerView: "4",
+                        spaceBetween: "50",
+                    }
+                },
 
-    } ////// if ////////////////////////////////////////
-    
+            });
+
+
+        } ////// if ////////////////////////////////////////
+        else {
+            //delete $.fn.mobSwiper;            
+            $("#gallery .photobox").removeClass('.swiper-slide');
+
+        };
+
+
+    }
 
 
 

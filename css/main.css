@@ -12,7 +12,13 @@
 @import url(prodpage.css);
 @import url(member.css);
 @import url(media.css);
+/*
 
+.footer,
+.footer .fp-tableCell {
+    height: auto !important;
+}
+*/
 
 
 /*배너*/

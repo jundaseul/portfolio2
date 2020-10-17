@@ -526,13 +526,11 @@
     background-color: #333;
     box-sizing: border-box;
 }
-/*
 
 .footer,
 .footer .fp-tableCell {
     height: auto !important;
 }
-*/
 
 .footer_top {
     display: flex;

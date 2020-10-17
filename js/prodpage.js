@@ -7,6 +7,7 @@ var pri; //가격
 var cat; //구분
 var isrc; //이미지경로
 
+
 // 파라미터 받기 //
 var pm = location.href; //url읽어오기
 
@@ -111,6 +112,196 @@ $(function () { /////// jQB ///////////////////////
             "background-image": "url(" + isrc + ")"
         });
     } //////// else //////////////////////
+
+
+
+
+
+
+    /*이미지 나타나게 하는 세팅 **********************************************************/
+
+    var pos1, pos2, pos3, pos4, pos5, pos6, pos7;
+
+    var initSet = function () {
+        // 1번타겟
+        $(".pImg2").css({
+            top: "150px",
+            opacity: "0",
+            transition: "all 0.8s ease-out"
+        }); //// css ///////////
+
+        pos1 = $(".pImg2").offset().top;
+        //console.log("1위치:" + pos1);
+
+
+
+        // 2번타겟
+        $(".pImg3").css({
+            top: "150px",
+            opacity: "0",
+            transition: "all 0.8s ease-out"
+        }); //// css ///////////
+
+        pos2 = $(".pImg3").offset().top;
+        //console.log("2위치:" + pos2);
+
+
+        // 3번타겟
+        $(".pImg4").css({
+            top: "150px",
+            opacity: "0",
+            transition: "all 0.8s ease-out 0.1s"
+        }); //// css ///////////
+
+        pos3 = $(".pImg4").offset().top;
+        //console.log("2위치:" + pos2);
+        
+        
+        // 4번타겟
+        $(".pImg5").css({
+            top: "150px",
+            opacity: "0",
+            transition: "all 0.8s ease-out 0.5s"
+        }); //// css ///////////
+
+        pos4 = $(".pImg5").offset().top;
+        //console.log("2위치:" + pos2);
+        
+        
+        // 5번타겟
+        $(".pImg6").css({
+            top: "180px",
+            opacity: "0",
+            transition: "all 0.8s ease-out 0.3s"
+        }); //// css ///////////
+
+        pos5 = $(".pImg6").offset().top;
+        //console.log("6위치:" + pos5);
+        
+                
+        
+        // 6번타겟
+        $(".pImg7").css({
+            top: "180px",
+            opacity: "0",
+            transition: "all 0.8s ease-out "
+        }); //// css ///////////
+
+        pos6 = $(".pImg7").offset().top;
+        //console.log("6위치:" + pos6);
+        
+                     
+        // 7번타겟
+        $(".pImg8").css({
+            top: "180px",
+            opacity: "0",
+            transition: "all 0.8s ease-out 0.5s"
+        }); //// css ///////////
+
+        pos7 = $(".pImg8").offset().top;
+        //console.log("7위치:" + pos7);
+        
+        
+        
+
+    } /////////////////////////////////////////////////////////////////
+
+
+
+    // 초기화함수 호출하기
+    initSet();
+
+
+    // 스크롤이벤트 함수
+    $(window).scroll(function () {
+
+        var scTop = $(this).scrollTop();
+        //console.log("스크롤위치값:" + scTop);
+
+
+        // 1번이미지
+        if (scTop > pos1 - 800 && scTop < pos1 + 800) {
+            // 1번 나타나게
+            $(".pImg2").css({
+                top: "0",
+                opacity: "1"
+            }); //// css ///////////
+
+        }; //////// if //////////////////
+        //        else { // 원위치
+        //            $(".intro_side_tit").css({
+        //                top: "0",
+        //                opacity: 0
+        //            });
+        //        } /////// else //////////////////
+
+
+        //2번이미지
+        if (scTop > pos2 - 600 && scTop < pos2 + 600) {
+            // 1번 나타나게
+            $(".pImg3").css({
+                top: "0",
+                opacity: "1"
+            }); //// css ///////////
+        }; //////// if //////////////////
+        
+        
+        //3번이미지
+        if (scTop > pos3 - 600 && scTop < pos3 + 600) {
+            // 1번 나타나게
+            $(".pImg4").css({
+                top: "0",
+                opacity: "1"
+            }); //// css ///////////
+        }; //////// if //////////////////
+
+        
+        //4번이미지
+        if (scTop > pos4 - 1000 && scTop < pos4 + 1000) {
+            // 1번 나타나게
+            $(".pImg5").css({
+                top: "0",
+                opacity: "1"
+            }); //// css ///////////
+        }; //////// if //////////////////
+
+        
+        
+        //5번이미지
+        if (scTop > pos5 - 600 && scTop < pos5 + 600) {
+            // 1번 나타나게
+            $(".pImg6").css({
+                top: "0",
+                opacity: "1"
+            }); //// css ///////////
+        }; //////// if //////////////////
+
+        
+        //6번이미지
+        if (scTop > pos6 - 700 && scTop < pos6 + 700) {
+            // 1번 나타나게
+            $(".pImg7").css({
+                top: "0",
+                opacity: "1"
+            }); //// css ///////////
+        }; //////// if //////////////////
+
+        
+        
+        //7번이미지
+        if (scTop > pos7 - 700 && scTop < pos7 + 700) {
+            // 1번 나타나게
+            $(".pImg8").css({
+                top: "0",
+                opacity: "1"
+            }); //// css ///////////
+        }; //////// if //////////////////
+
+        
+        
+
+    }); /////// scroll /////////////////////////////////////////
+
 
 
 

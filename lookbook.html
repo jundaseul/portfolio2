@@ -4,27 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/lookbook.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <title>Reindeer - lookbook</title>
     <!-- jQuery library -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/common.js"></script>
     <script src="js/lookbook.js"></script>
+    <script src="js/common.js"></script>
 </head>
 
 <body>
+
     <!--메뉴 박스-->
     <div id="menu">
         <div class="menu_txt_area">
             <ul class="menu_txt">
-                <li><a href="#">STORE</a></li>
+                <li><a href="store.html">STORE</a></li>
                 <li><a href="lookbook.html">LOOKBOOK</a></li>
                 <li><a href="notice.html">NOTICE</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <ul class="menu_gnb">
+                <li><a href="#login_wrap" class="gnb_menu log">LOGIN</a></li>
+                <li><a href="member.html" class="gnb_menu">JOIN</a></li>
             </ul>
         </div>
         <ul class="menu_bg">
@@ -37,9 +42,77 @@
         <a href="#" class="cbtn"><img src="images/close_btn.png" alt="닫기버튼"></a>
     </div>
 
+
+    <!--장바구니 팝업-->
+    <section id="cart_wrap">
+        <div id="cart">
+            <div class="cart">
+                <a href="#"><img src="images/close_btn.png" alt="닫기버튼" class="cart_cbtn"></a>
+                <div class="cart_box">
+                    <h4 class="cart_title">Cart</h4>
+                    <ul class="cart_categoty">
+                        <li>Item</li>
+                        <li>Quantity</li>
+                        <li>Price</li>
+                    </ul>
+                    <div class="cart_list_box">
+                        <ul class="cart_list">
+                            <li></li>
+                            <li class="list_name"><a href="#">MRC-ER49<br><small>[ 옵션 - gold ]</small></a></li>
+                            <li>1</li>
+                            <li>178,000</li>
+                        </ul>
+                        <!--                        <a href="#" class="delbtn"><img src="images/minus.png" alt="삭제버튼"></a>-->
+                        <label for="delcheck" class="check_label">
+                            <input type="checkbox" class="delcheck" id="delcheck">
+                            <span class="bullet_checkbox"></span>
+                        </label>
+                        <p class="cart_msg">The cart is empty.</p>
+                    </div>
+                    <div class="cart_total">
+                        <p>Total</p>
+                        <p class="cartprice">KRW 178,000</p>
+                    </div>
+                    <button class="delbtn cart_btn">Delete</button>
+                    <button class="cart_btn">Order</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--로그인팝업-->
+    <section class="container">
+        <div id="login_wrap" class="login_wrap">
+            <div class="login">
+                <div class="login_top">
+                    <p>LOGIN</p>
+                    <p>가입시 입력하신 <span class="break">아이디와 비밀번호를 입력하세요.</span></p>
+                </div>
+                <div class="login_bottom">
+                    <div class="l_input">
+                        <div class="id">
+                            <input type="text" id="id" maxlength="30" placeholder="ID">
+                        </div>
+                        <div class="pw">
+                            <input type="password" id="pw" maxlength="20" placeholder="PASSWORD">
+                        </div>
+                    </div>
+                    <div class="loginbtn">
+                        <input type="button" id="lobtn" value="Login">
+                    </div>
+                </div>
+                <a href="member.html" class="logpopup_join">Join us</a>
+                <!--닫기버튼-->
+                <a href="#" class="logcbtn"><img src="images/close_btn.png" alt="닫기버튼"></a>
+            </div>
+        </div>
+    </section>
+
+
     <!--상단영역-->
     <div class="top">
         <header class="inbox" id="header">
+            <a href="#" class="header_cart"><img src="images/cart_black.png" alt="장바구니버튼"></a>
             <!--로고-->
             <h1 class="logo">
                 <a href="/">reindeer</a>
@@ -47,14 +120,15 @@
             <!--gnb 메뉴-->
             <nav class="gnb_wrap">
                 <ul class="gnb">
-                    <li class="on"><a href="#">LOGIN</a></li>
-                    <li><a href="#">JOIN</a></li>
-                    <li><a href="#">CART</a></li>
+                    <li><a href="#login_wrap" class="gnblogin">LOGIN</a></li>
+                    <li><a href="member.html">JOIN</a></li>
+                    <li><a href="#" class="cartbtn">CART</a></li>
                 </ul>
-                <a href="#" class="menubtn"><img src="images/menu_bar_2.png" alt="메뉴버튼"></a>
+                <a href="#" class="menubtn mbtn1"><img src="images/menu_bar_2.png" alt="메뉴버튼"></a>
             </nav>
         </header>
     </div>
+
 
     <!-- 룩북 영역 -->
     <section class="page lbbg">
@@ -66,8 +140,8 @@
                     <h4 class="lb_cont_tit">01,&nbsp;&nbsp;Silent Sand Duen</h4>
                     <p>첫번째 디자인 디테일인 "고요"를 표현하기 위해 사용된 디테일은 모래 언덕의 모양이다.<br>
                         도자기를 만들 때 성형하는 작업과 똑같이 손으로 조각과 성형의 작업을 지속한 후<br>
-                        금속으로 만들어 내었다. 아무도 없는 사막의 밤에 조용히 바람이 불 때 켜켜이 쌓여가는 모래를<br>
-                        생각하며 바쁜 일상에 한 순간만이라도 평온이 있기를 바란다.
+                        금속으로 만들어 내었다. 아무도 없는 사막의 밤에 조용히 바람이 불 때 켜켜이 쌓여가는 <span class="break">모래를<span class="breakinline"><br>
+                                생각하며 바쁜 일상에 한 순간만이라도 평온이 있기를 바란다.</span></span>
                     </p>
                     <a href="#" class="lbbtn_next"><img src="images/arrow_black.png" alt="다음 버튼"></a>
                     <span class="lbbtn_more"><a href="#">more ＋</a></span>
@@ -104,7 +178,7 @@
                             <img src="images/look_6.jpg" alt="룩북상세이미지">
                         </div>
                         <div class="swiper-slide lbx">
-<!--                            <img src="images/look_6.jpg" alt="룩북상세이미지">-->
+                            <!--                            <img src="images/look_6.jpg" alt="룩북상세이미지">-->
                         </div>
 
                     </div>
@@ -118,8 +192,9 @@
 
 
 
+
     <!--푸터-->
-    <div class="footer">
+    <div class="footer section fp-auto-height">
         <footer class="inbox" id="footer">
             <div class="footer_top">
                 <div class="info1">
@@ -143,10 +218,12 @@
                 <h2 class="footer_logo">reindeer</h2>
                 <p>@2020 Copyright (c) All rights reserved.</p>
             </div>
+
+            <!--따라오는 TOP메뉴-->
+            <button id="tbtn">
+                <img src="images/arrow_top.png" alt="top버튼">
+            </button>
         </footer>
     </div>
 
-
-</body>
-
-</html>
+</body></html>

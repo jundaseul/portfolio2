@@ -20,10 +20,13 @@ var mob = 0;
 if ($(window).width() < 800) mob = 1;
 console.log("모바일?" + mob);
 
-/*태블릿일 때*/
+
+/*
+태블릿일 때
 var tab = 0;
 if ($(window).width() < 1200) tab = 1;
 console.log("태블릿?" + tab);
+*/
 
 
 
@@ -41,7 +44,7 @@ $(function () { //////////// jQB //////////////////////
 
 
         $("body").css({
-            overflowY: "hidden"
+            //overflowY: "hidden"
         });
     }); // click ///////////////////////
 
@@ -51,7 +54,7 @@ $(function () { //////////// jQB //////////////////////
         $("#menu").fadeOut(500);
 
         $("body").css({
-            overflowY: "auto"
+            //overflowY: "auto"
         });
     }); // click //////////////////////
 
@@ -74,7 +77,7 @@ $(function () { //////////// jQB //////////////////////
 
     $(".menu_txt li").mouseenter(function () {
         var idx = $(this).index();
-        console.log("순번:" + idx);
+        //console.log("순번:" + idx);
 
         $(".menu_bg li").eq(idx).addClass("on")
             .siblings().removeClass("on");
@@ -148,36 +151,3 @@ $(function () { //////////// jQB //////////////////////
 
 
 
-
-$(function () { //////////// jQB //////////////////////
-
-
-
-    // 탑버튼 클릭시 위로 올라가게
-    $('#tbtn').click(function () {
-
-        //var offset = $('.ban').offset();
-        //선택한 태그의 위치를 반환
-        //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.8초 동안 부드럽게 해당 위치로 이동함.
-        $.fn.fullpage.moveTo(1);
-        ////// animate ////////
-
-    }); ///////////////// click ////////////////////////////
-
-
-    $(document).ready(function() {
-		$('#fullpage').fullpage({			
-			menu: '#anchors',
-			anchors: ['firstPage', 'secondPage', '3rdPage', '4rdPage', '5rdPage'],
-			//autoScrolling: false
-			navigation: false,
-			navigationPosition: 'left',
-			responsiveWidth: 1000, // 너비가 1000일때 수동 원페이지 -> 스크롤
-		});	
-	});
-
-
-    
-    
-}); ///////////// jQB ///////////////////////////////
-/////////////////////////////////////////////////////

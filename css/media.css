@@ -1,6 +1,51 @@
 @charset "utf-8";
 /* reindeer 미디어쿼리 - media.css */
 
+/*1660px이하*********************************************************/
+@media only screen and (max-width:1660px) {
+    .lb_cont_txt {
+        right: -23%;
+    }
+
+    .lbbtn_next {
+        right: -2%;
+    }
+
+    .lbbtn_more {
+        right: 9%;
+        bottom: 8%;
+    }
+}
+
+/*1550px이하*********************************************************/
+@media only screen and (max-width:1550px) {
+    .lb_cont_txt {
+        height: 35vh;
+        margin-top: 8.9%;
+    }
+
+    .lb_cont_txt .break {
+        display: block;
+    }
+
+    .lb_cont_txt .breakinline {
+        display: inline-block;
+    }
+
+    .breakinline br {
+        display: none;
+    }
+
+    .lbbtn_more {
+        bottom: 15%;
+        font-size: 1rem;
+    }
+
+}
+
+
+
+
 /*1500px이하*********************************************************/
 @media only screen and (max-width:1500px) {
     .login {
@@ -11,6 +56,26 @@
         width: 17vw;
     }
 }
+
+
+
+
+/*1460px이하*********************************************************/
+@media only screen and (max-width:1460px) {
+    .lb_cont_img {
+        width: 90%;
+        height: 470px;
+    }
+
+    .lb_cont_txt {
+        width: 70%;
+        height: 35vh;
+        margin-top: 33%;
+    }
+
+}
+
+
 
 /*1400px이하*********************************************************/
 @media only screen and (max-width:1400px) {
@@ -27,6 +92,30 @@
 }
 
 
+/*1355px이하*********************************************************/
+@media only screen and (max-width:1355px) {
+    .notice_title.lb {
+        margin-top: -3.5%;
+    }
+
+    .lb_cont_txt {
+        width: 74%;
+        margin-top: 37%;
+    }
+
+    .lb_cont_txt .lbbtn_next {
+        right: -7%;
+    }
+
+    .lbbtn_more {
+        right: 3%;
+    }
+
+}
+
+
+
+
 /*1350px이하*********************************************************/
 @media only screen and (max-width:1350px) {
 
@@ -40,6 +129,34 @@
         width: 20vw;
     }
 
+}
+
+/*1275px이하*********************************************************/
+@media only screen and (max-width:1275px) {
+
+    #lb_cont,
+    .lb_cont_img,
+    .lb_cont_txt {
+        width: 100%;
+    }
+
+    #lb_cont {
+        margin: 0 0 0 7.4%;
+    }
+
+    .lb_cont_img {
+        background: url(../images/look_2.jpg) no-repeat 100% 100%/cover;
+    }
+    
+    .lb_cont_txt {
+        left: 0;
+    }
+
+    .lb_cont_txt .lbbtn_next {
+        right: 3%;
+        top: 45%;
+        width: 30px;
+    }
 }
 
 /*1200px이하*********************************************************/

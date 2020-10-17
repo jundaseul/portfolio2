@@ -32,6 +32,10 @@
 }
 
 /*룩북 회색배경*/
+.lbbg{
+    padding: 0 3% 0 0;
+}
+
 .lbbg::before {
     position: absolute;
     content: '';
@@ -43,7 +47,7 @@
 /*룩북 컨텐츠*/
 #lb_cont {
     position: relative;
-    width: 1200px;
+    width: 87%;
     max-width: 100%;
     display: flex;
 }
@@ -68,11 +72,11 @@
 /*룩북 컨텐츠 우측 설명박스*/
 .lb_cont_txt {
     position: absolute;
-    width: 60%;
-    height: 32vh;
+    width: 65%;
+    height: 34vh;
     background-color: #fff;
-    right: -20%;
-    margin-top: 10%;
+    right: -25%;
+    margin-top: 9%;
     padding: 3%;
 }
 
@@ -107,8 +111,8 @@
 
 .lbbtn_next {
     position: absolute;
-    width: 3.5%;
-    right: 1%;
+    width: 25px;
+    right: 3%;
     top: 50%;
     transform: translateY(-50%);
 }

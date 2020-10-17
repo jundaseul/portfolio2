@@ -2,15 +2,30 @@
 
 $(function () { //////////// jQB //////////////////////
     //console.log("로딩완료");
-    
 
-    $("#fullpage").fullpage({
-        autoScrolling: true,
-        scrollHorizontally: true
+    
+    
+   
+        $('#fullpage').fullpage({
+            //anchors: ['page1', 'page2', 'footer'],
+            scrollOverflow: false,
+            autoScrolling: true,
+            //scrollBar: true,
+            scrollOverflow: false
+        });
+   
+    
+    $("#menu").find(".cbtn").click(function(){
+       $("body").css({
+           overflow:"hidden"
+       }); 
+        console.log("숨기기");
     });
+
+
 }); ///////////// jQB ///////////////////////////////
 /////////////////////////////////////////////////////
-
+//
 
 $(function () { //////// jQB////////
     //console.log("로딩완료!")
@@ -138,3 +153,25 @@ $(function () { //////// jQB////////
 }) /////////////// jQB /////////////////////////
 
 
+
+$(function () { //////////// jQB //////////////////////
+
+
+
+
+    // 탑버튼 클릭시 위로 올라가게
+    $('#tbtn').click(function () {
+
+        //var offset = $('.ban').offset();
+        //선택한 태그의 위치를 반환
+        //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.8초 동안 부드럽게 해당 위치로 이동함.
+        $.fn.fullpage.moveTo(1);
+        ////// animate ////////
+
+    }); ///////////////// click ////////////////////////////
+
+
+
+
+}); ///////////// jQB ///////////////////////////////
+/////////////////////////////////////////////////////
