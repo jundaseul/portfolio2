@@ -1,6 +1,7 @@
 @charset "utf-8";
 /* lookbook.css - 룩북페이지 */
 
+
 /*룩북 전체 영역*/
 #lookbook_wrap {
     width: 78%;
@@ -11,6 +12,11 @@
     color: #333;
     font-size: 1.0625rem;
     padding: 13% 2% 17% 2%;
+}
+
+/*룩북 헤더영역*/
+.lookbook_top{
+    background-color: #fff;
 }
 
 
@@ -124,11 +130,8 @@
 /* 룩북 상세페이지 *************************************************************/
 #lookbook_more {
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-top: 90px;
+    top: 9%;
     margin: 0 auto;
-    padding-top: 6%;
 }
 
 .lbmore_cont {

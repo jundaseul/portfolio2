@@ -2,11 +2,12 @@
 /* notice.css - 공지사항 */
 
 /*notice 영역*/
-
-/*공지 전체 영역 섹션*/
-.notice_wrap{
-    margin-top: 90px;
+/*공지사항 헤더*/
+.notice_top{
+    background-color: #fff;
 }
+
+
 
 /*공지 전체 영역*/
 #notice_wrap {
@@ -17,6 +18,7 @@
     color: #333;
     font-size: 1.0625rem;
     padding-top: 5%;
+    margin-top: 90px;
 }
 
 

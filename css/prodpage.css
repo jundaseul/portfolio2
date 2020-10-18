@@ -1,6 +1,13 @@
 @charset "utf-8";
 /* prodpage.css - 제품 상세페이지 */
 
+
+/*상세페이지 헤더영역*/
+.prod_top{
+    background-color: #fff;
+}
+
+
 /*제품 상세페이지 박스*/
 #prod_wrap {
     display: flex;
@@ -163,7 +170,7 @@
     top: 0;
     bottom: 0;
     margin-top: 90px;
-    outline: 1px solid lime;
+/*    outline: 1px solid lime;*/
 }
 
 .prodInfo {

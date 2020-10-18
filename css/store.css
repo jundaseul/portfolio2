@@ -1,6 +1,10 @@
 @charset "utf-8";
 /* store.css - store 페이지 */
 
+/*store 헤더영역*/
+.store_top{
+    background-color: #fff;
+}
 
 /*store 영역*/
 #lookbook_wrap.store_wrap{
