@@ -3,7 +3,7 @@
 
 
 /*상세페이지 헤더영역*/
-.prod_top{
+.prod_top {
     background-color: #fff;
 }
 
@@ -22,7 +22,7 @@
     position: relative;
     width: 65%;
     /*    margin: 0 auto;*/
-/*    outline: 1px solid blue;*/
+    /*    outline: 1px solid blue;*/
 }
 
 .prodMore {
@@ -40,7 +40,7 @@
 
 
 .pImg1 {
-    width: 25vw;
+    width: 40vw;
     height: 55vh;
     background-image: url(../images/prodpage/earring/1.jpg);
     left: 50%;
@@ -123,7 +123,7 @@
     background-image: url(../images/prodpage/earring/5.jpg);
     left: 50%;
     transform: translateX(-50%);
-    margin-bottom: 20%;
+    margin-bottom: 25%;
 }
 
 
@@ -170,7 +170,7 @@
     top: 0;
     bottom: 0;
     margin-top: 90px;
-/*    outline: 1px solid lime;*/
+    /*    outline: 1px solid lime;*/
 }
 
 .prodInfo {
@@ -220,4 +220,36 @@
     border: 1px solid #707070;
     padding: 1px 15px;
     font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*장바구니 추가버튼*/
+.addBtn {
+    display: block;
+    width: 80%;
+    height: 50px;
+    background-color: #333;
+    border: 0;
+    margin: 30px auto;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+/*모바일 옵션닫기 버튼*/
+.slideBtn {
+    display: none;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -22px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.slideBtn img {
+    width: 32%;
+    padding-top: 10px;
 }

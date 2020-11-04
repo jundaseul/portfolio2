@@ -14,17 +14,19 @@ $(function () { //////////// jQB //////////////////////
             scrollOverflow: false,
             autoScrolling: true,
             //scrollBar: true,
-            scrollOverflow: false
+            scrollOverflow: false,
+            responsiveWidth:430/*반응형시(모바일) 풀페이지 안먹히게!*/
         });
    
     
+    /* - 메뉴버튼 클릭시 스크롤이 안돼서 꺼둠!
     $("#menu").find(".cbtn").click(function(){
        $("body").css({
            overflow:"hidden"
        }); 
         console.log("숨기기");
     });
-
+*/
 
 }); ///////////// jQB ///////////////////////////////
 /////////////////////////////////////////////////////
@@ -493,6 +495,11 @@ $(function () {
         ////// animate ////////
 
     }); ///////////////// click ////////////////////////////
+    
+    // 모바일 사이즈에서 탑버튼 사라지게
+    if ($(window).width() < 380){
+      $('#tbtn').hide();  
+    };
 
 
 

@@ -129,13 +129,18 @@
 #cart_wrap {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100vw;
+    right: 0;
+/*    width: 35vw;*/
+    width: 650px;
     height: 100vh;
     background-color: rgba(000, 000, 000, 0.6);
     z-index: 9999;
+    background-color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+    border-left: 1px solid #b2b2b2;
     display: none;
 }
+/*
 
 #cart {
     position: absolute;
@@ -143,10 +148,8 @@
     top: 0;
     right: 0;
     bottom: 0;
-    background-color: #fff;
-    font-family: 'Noto Sans', sans-serif;
-
 }
+*/
 
 .cart {
     position: absolute;

@@ -112,7 +112,8 @@ $(function () { //////////// jQB //////////////////////
         $("#cart_wrap").fadeIn(300);
 
         $("body").css({
-            overflowY: "hidden"
+            //overflowY: "hidden"
+            //자꾸 스크롤바 생겨서 지운 것 !
         });
     }); ///////////// click ////////////////////
     // 닫기 클릭시 장바구니 팝업 사라지게
@@ -120,10 +121,16 @@ $(function () { //////////// jQB //////////////////////
         $("#cart_wrap").fadeOut(300);
 
         $("body").css({
-            overflowY: "visible"
+            //overflowY: "visible"
         });
     }); ///////////// click ////////////////////
 
+    
+    // (500px 이하시) 장바구니 아이콘 클릭시 팝업 나타나게
+    $(".header_cart").click(function(){
+       $("#cart_wrap").fadeIn(300); 
+    });
+    
 
     // 삭제하고 문구나타나게    
     if (".cart_list_box .delcheck:checked + .bullet_checkbox") {

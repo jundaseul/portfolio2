@@ -15,7 +15,7 @@
 }
 
 /*룩북 헤더영역*/
-.lookbook_top{
+.lookbook_top {
     background-color: #fff;
 }
 
@@ -38,7 +38,7 @@
 }
 
 /*룩북 회색배경*/
-.lbbg{
+.lbbg {
     padding: 0 3% 0 0;
 }
 
@@ -67,11 +67,11 @@
 }
 
 /*2번 페이지 좌측 이미지*/
-.lb2Img{
+.lb_cont_img.lb2Img {
     background: url(../images/lb2Img.jpg) no-repeat center/cover;
 }
 
-.lbbtn_next.prev img{
+.lbbtn_next.prev img {
     transform: rotate(180deg);
 }
 
@@ -111,8 +111,9 @@
     font-size: 0.9375rem;
 }
 
-.lbmore_tit.lbtit2{
+.lbmore_tit.lbtit2 {
     color: #DAEF6F;
+    left: -158px;
 }
 
 .lbbtn_next {
@@ -126,6 +127,17 @@
 .lbbtn_next img {
     width: 100%;
 }
+
+
+/* 룩북2 페이지 ************************/
+.lb2_contxt .lbBreak2 {
+    display: block;
+}
+.lbbtn_more.lb2btn_more{
+    bottom: 0;
+}
+
+
 
 /* 룩북 상세페이지 *************************************************************/
 #lookbook_more {
@@ -146,7 +158,7 @@
 .lbmore_tit {
     position: absolute;
     top: 12%;
-    left: -17%;
+    left: -245px;
     font-size: 60px;
     color: #DC5F31;
     letter-spacing: -1.3px;
@@ -161,33 +173,47 @@
     height: auto;
 }
 
-.swiper-wrapper{
+.swiper-wrapper {
     height: 90% !important;
 }
 
 .swiper-slide {
     display: flex;
     /* 내용을 중앙정렬 하기위해 flex 사용 */
-/*    margin-right: 2%;*/
+    /*    margin-right: 2%;*/
     overflow: hidden;
 }
-.swiper-slide:last-child{
+
+.slideLast {
     width: 0;
 }
 
 
 /*첫번째 이미지 강제로 넓게*/
-.tbx{
+.tbx {
     width: 60% !important;
 }
-.lbx{
-/*    width: 30% !important;*/
+
+.lbx {
+    /*    width: 308.333px !important;*/
 }
+
 .swiper-slide img {
     width: 100%;
-/*    height: 550px;    */
+    /*    height: 550px;    */
     /* 이미지 최대너비를 제한, 슬라이드에 이미지가 여러개가 보여질때 필요 */
     /* 이 예제에서 필요해서 설정했습니다. 상황에따라 다를 수 있습니다. */
+}
+
+
+/*룩북 2 이미지 크기 강제맞추기*/
+.lb2Img img {
+    /*    height: 69vh;*/
+}
+
+
+.lb2_scrbar {
+    bottom: 19% !important;
 }
 
 
@@ -208,4 +234,34 @@
     height: 5px;
     background-color: #727272;
     border-radius: 10px;
+}
+
+
+
+
+
+/*모바일에서만 타이틀 나타나게*/
+.mbnoTitle {
+    display: none;
+}
+
+/*모바일에서만 more 나타나게*/
+.mobmoreBtn {
+    display: none;
+}
+
+/*모바일에서의 상세페이지 문구*/
+.moblbTxt {
+    display: none;
+}
+
+.mobnextBtn {
+    display: none;
+}
+
+
+
+/*룩북 2페이지 크기 조절*/
+.lb2Img img{
+    height: 62vh !important;
 }

@@ -6,24 +6,25 @@
 $(function () { //////////// jQB //////////////////////
     console.log("연결됐니????????????????");
 
-    
-    
-   
-        $('#fullpage').fullpage({
-            //anchors: ['page1', 'page2', 'footer'],
-            scrollOverflow: false,
-            autoScrolling: true,
-            //scrollBar: true,
-            scrollOverflow: false
-        });
-   
-    
-    $("#menu").find(".cbtn").click(function(){
-       $("body").css({
-           overflow:"hidden"
-       }); 
-        console.log("숨기기");
+
+
+
+    $('#fullpage').fullpage({
+        //anchors: ['page1', 'page2', 'footer'],
+        scrollOverflow: false,
+        autoScrolling: true,
+        //scrollBar: true,
+        scrollOverflow: false,
+        responsiveWidth: 1600
     });
+
+    //    
+    //    $("#menu").find(".cbtn").click(function(){
+    //       $("body").css({
+    //           overflow:"hidden"
+    //       }); 
+    //        console.log("숨기기");
+    //    });
 
 
 }); ///////////// jQB ///////////////////////////////
@@ -36,11 +37,22 @@ $(function () { //////////// jQB //////////////////////
     console.log("로딩완료");
 
     var sldNum = 3;
-    if (mob) {
-        sldNum = 1;
+//    if (mob) {
+//        sldNum = 1;
+//        $(".swiper-slide").first().removeClass("tbx");
+//        //$(".swiper-slide").last().remove();
+//    }
+
+    if ($(window).width() < 1080) {
+        sldNum = 2;
         $(".swiper-slide").first().removeClass("tbx");
         $(".swiper-slide").last().remove();
-    }
+    };
+    if ($(window).width() < 600) {
+        sldNum = 1;
+        $(".swiper-slide").first().removeClass("tbx");
+//        $(".swiper-slide").last().remove();
+    };
 
     console.log("개수:" + sldNum);
 
@@ -88,7 +100,7 @@ $(function () { /////// jQB ///////////////////////
 
 
 //////////// jQB //////////////////////
-$(function () { 
+$(function () {
 
 
 
@@ -103,6 +115,22 @@ $(function () {
         ////// animate ////////
 
     }); ///////////////// click ////////////////////////////
+
+
+
+
+    // 684px 사이즈에서 > 버튼 바꾸게 
+   /* if ($(window).width() < 684) {
+        $('.lbbtn_next img').attr("src", "images/arrow_white_2.png");
+    };
+*/
+    
+    //    
+    //    // 모바일 사이즈에서 탑버튼 사라지게
+    //    if ($(window).width() < 380){
+    //      $('#tbtn').hide();  
+    //    };
+    //    
 
 
 

@@ -13,16 +13,17 @@ $(function () { //////////// jQB //////////////////////
             scrollOverflow: false,
             autoScrolling: true,
             //scrollBar: true,
-            scrollOverflow: false
+            scrollOverflow: false,
+            responsiveWidth:1200
         });
    
-    
-    $("#menu").find(".cbtn").click(function(){
-       $("body").css({
-           overflow:"hidden"
-       }); 
-        console.log("숨기기");
-    });
+//    
+//    $("#menu").find(".cbtn").click(function(){
+//       $("body").css({
+//           overflow:"hidden"
+//       }); 
+//        console.log("숨기기");
+//    });
 
 
 }); ///////////// jQB ///////////////////////////////
@@ -46,6 +47,13 @@ $(function () {
         ////// animate ////////
 
     }); ///////////////// click ////////////////////////////
+    
+    
+    // 1200사이즈에서(풀페이지 플러그인 비활성화할 때) 탑버튼 사라지게
+    if ($(window).width() < 1200){
+      $('#tbtn').hide();  
+    };
+
 
 
 
