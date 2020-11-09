@@ -1,5 +1,18 @@
 @charset "utf-8";
+
 /* reindeer 미디어쿼리 - media.css */
+/*1920px 이하********************************************************/
+@media only screen and (max-width:1920px) {
+
+    /*store페이지*/
+    .store_wrap .swiper-container {
+        width: 89.5%;
+    }
+
+    #gallery {
+        width: 100%;
+    }
+}
 
 /*1660px이하*********************************************************/
 @media only screen and (max-width:1660px) {
@@ -15,6 +28,10 @@
         right: 9%;
         bottom: 8%;
     }
+
+
+
+
 }
 
 /*1600px이하*********************************************************/
@@ -189,6 +206,33 @@
         left: -150px;
     }
 
+    /*store 페이지*/
+    /*all 제품*/
+    .store_best.all > .gallery.all > .photobox {
+        width: 31.3%;
+        margin: 0 3% 3% 0;
+    }
+
+    .store_best.all > .gallery.all > .photobox:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    /*설명글 박스*/
+    .gallery.all .txt {
+        padding: 5% 0;
+    }
+
+    .gallery.all .txttitle {
+        font-size: 1.0625rem;
+        padding-bottom: 13px;
+    }
+
+    .gallery.all .txtcollec,
+    .txtprice {
+        font-size: 0.9375rem;
+    }
+
+
 }
 
 /*1275px이하*********************************************************/
@@ -315,6 +359,9 @@
         left: -140px;
     }
 
+
+
+
 }
 
 
@@ -426,7 +473,6 @@
 }
 
 
-
 /*1080px이하*********************************************************/
 @media only screen and (max-width:1080px) {
 
@@ -496,6 +542,56 @@
     }
 }
 
+/*1024px이하*********************************************************/
+@media only screen and (max-width:1024px) {
+
+    /*store 페이지*/
+    .store_title {
+        margin-bottom: 10%;
+    }
+
+
+    /*all 제품*/
+    .store_best.all > .gallery.all > .photobox {
+        width: 47%;
+        margin: 0 6% 6% 0;
+    }
+
+    .store_best.all > .gallery.all > .photobox:nth-child(3n) {
+        margin-right: 6%;
+    }
+
+    .store_best.all > .gallery.all > .photobox:nth-child(2n) {
+        margin-right: 0;
+    }
+
+
+    /*설명글 박스*/
+    .gallery.all .txt {
+        padding: 4% 0;
+    }
+
+    .txttitle {
+        font-size: 1.0625rem;
+        padding-bottom: 13px;
+    }
+
+    .txtcollec,
+    .txtprice {
+        font-size: 0.9375rem;
+    }
+
+
+    /*모든 제품 박스*/
+    .store_best.all {
+        padding-top: 18%;
+    }
+
+
+
+
+
+}
 
 
 
@@ -672,6 +768,11 @@
         width: 85%;
         padding-top: 15%;
     }
+
+    /*store 페이지*/
+    .store_wrap {
+        margin-top: 6%;
+    }
 }
 
 
@@ -764,6 +865,11 @@
         height: 45vh !important;
     }
 
+
+    /*store 페이지*/
+    .store_title {
+        margin-bottom: 13%;
+    }
 }
 
 
@@ -967,6 +1073,11 @@
         height: 42vh !important;
     }
 
+
+    /*store 페이지*/
+    .store_wrap {
+        margin-top: 12%;
+    }
 
 }
 
@@ -1182,6 +1293,10 @@
         bottom: 0;
     }
 
+    /*공지사항 페이지*/
+    .noticeBreak {
+        display: block;
+    }
 }
 
 
@@ -1198,6 +1313,38 @@
         height: 65vh !important;
     }
 
+
+    /*store 페이지*/
+    .store_title {
+        margin-bottom: 18%;
+    }
+    .store_cate li{
+        padding: 0 30px;
+    }
+
+    .store_best.all > .gallery.all > .photobox {
+        width: 100%;
+        margin: 0 0 20% 0;
+    }
+
+    .store_best.all > .gallery.all > .photobox:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    /*이미지 설명박스*/
+    .gallery.all .txt {
+        padding: 5% 0;
+    }
+
+    .gallery.all .txttitle {
+        font-size: 1.1875rem;
+        padding-bottom: 18px;
+    }
+
+    .gallery.all .txtcollec,
+    .txtprice {
+        font-size: 1.0625rem;
+    }
 }
 
 
@@ -1975,7 +2122,7 @@
     #lbbox > .lbtn {
         width: 60%;
         font-size: 4.6vw;
-        line-height: 75px;
+        line-height: 50px;
     }
 
 
@@ -2070,6 +2217,11 @@
     .delbtn.cart_btn {
         right: 0;
         bottom: 23%;
+    }
+
+
+    .cart_cbtn {
+        right: 25px;
     }
 
     /*회원가입 페이지*/
@@ -2278,10 +2430,12 @@
     .loginbtn #lobtn {
         height: 7vh;
     }
+
     /*로그인팝업 닫기버튼*/
-    .logcbtn{
+    .logcbtn {
         width: 6.5%;
     }
+
 
 
 }

@@ -474,11 +474,11 @@ $(function () { //////////// jQB //////////////////////
 
 
 
-    
-    
-    
-    
-    
+
+
+
+
+
     var mob = 0;
     var winWidth;
     if ($(window).width() < 800) mob = 1;
@@ -489,10 +489,10 @@ $(function () { //////////// jQB //////////////////////
     $(window).resize(function () {
 
         //window.location.reload(); -> 자동새로고침(단점:계속 위로올라가서 시작함)
-                winWidth = $(window).width();
-                console.log(winWidth);
-                winWidth < 800 ? mob = 1 : mob = 0;
-                mobSwiper();
+        winWidth = $(window).width();
+        //console.log(winWidth);
+        winWidth < 800 ? mob = 1 : mob = 0;
+        mobSwiper();
     });
 
     //$(".swiper-wrapper").load(window.location.href + ".swiper-wrapper");
@@ -517,50 +517,86 @@ $(function () { //////////// jQB //////////////////////
                 width: "100%"
             });
             $('#gallery .photobox').css({
-                margin: "0"
-            });
-            $('.swiper-button-next, .swiper-button-prev').css({
-                display: "block"
+                margin: "0 auto"
             });
 
             var swiper = new Swiper('.swiper-container', {
                 slidesPerView: 1,
                 spaceBetween: 20,
-                navigation: { // 네비게이션 설정
-                    nextEl: '.swiper-button-next', // 다음 버튼 클래스명
-                    prevEl: '.swiper-button-prev', // 이번 버튼 클래스명
+                //                navigation: { // 네비게이션 설정
+                //                    nextEl: '.swiper-button-next', // 다음 버튼 클래스명
+                //                    prevEl: '.swiper-button-prev', // 이번 버튼 클래스명
+                //                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    clickable: true,
+
                 },
+/*
                 breakpoints: {
                     640: {
+                        slidesPerView: "2",
+                        spaceBetween: "30",
+                    },
+                    768: {
+                        slidesPerView: "2",
+                        spaceBetween: "40",
+
+                    },
+                    1024: {
+                        slidesPerView: "3",
+                        spaceBetween: "30",
+                    },
+                    1240: {
+                        slidesPerView: "3",
+                        spaceBetween:"30",
+                    },
+                    1350: {
+                        slidesPerView: "4",
+                        spaceBetween:"20",
+                        pagination: {
+                            hiddenClass: 'swiper-pagination-hidden'
+                        },
+                        
+                    }
+                },*/
+                
+                breakpoints: {
+                    600: {
                         slidesPerView: "2",
                         spaceBetween: "30"
                     },
                     768: {
                         slidesPerView: "2",
                         spaceBetween: "40",
-                        
+
                     },
-                    801: {
+                    1024: {
+                        slidesPerView: "3",
+                        spaceBetween: "30",
+                    },
+                    1350: {
+                        watchOverflow: "boolean",
                         slidesPerView: "4",
-                        spaceBetween: "50",
+                        spaceBetween: "20",
+                        
+                        pagination: {
+                            hiddenClass: 'swiper-pagination-hidden'
+                        }
                     }
                 },
+
 
             });
 
 
         } ////// if ////////////////////////////////////////
-        else {
-            //delete $.fn.mobSwiper;            
-            $("#gallery .photobox").removeClass('.swiper-slide');
-
-        };
 
 
     };
 
-    
-    
+
 
     /*store 탑버튼*/
     $('.store_tbtn').click(function () {
@@ -570,13 +606,125 @@ $(function () { //////////// jQB //////////////////////
         $('html').animate({
             scrollTop: "0px"
         }, 800);
-           
+
         ////// animate ////////
 
 
 
 
     }); ///////////////// click ////////////////////////////
+
+
+
+    // 1600px에서 설명글박스 조절
+    if ($(window).width() < 1600) {
+        $('.txt').css({
+            height: "22%"
+        })
+        $(".photobox").hover(
+            function () { // over
+                //1. 반투명커버 사라지기
+                $(".cobox", this).addClass("cover").stop().fadeIn(200);
+                //2. 글자박스 올라오기
+                $(".txt", this).stop().animate({
+                    top: "78%"
+                }, 300); /// animate //////
+            },
+            function () { // out
+                //1. 반투명커버 불러오기
+                $(".cobox", this).addClass("cover").stop().fadeOut(200);
+                //2. 글자박스 내려가기
+                $(".txt", this).stop().animate({
+                    top: "100%"
+                }, 300); /// animate //////
+            }); ////////// hover ///////////////////
+
+    };
+
+
+
+    //1350px에서 설명글박스 조절
+    if ($(window).width() < 1350) {
+        $('.txt').css({
+            height: "24%"
+        })
+        $(".photobox").hover(
+            function () { // over
+                //1. 반투명커버 사라지기
+                $(".cobox", this).addClass("cover").stop().fadeIn(200);
+                //2. 글자박스 올라오기
+                $(".txt", this).stop().animate({
+                    top: "76%"
+                }, 300); /// animate //////
+            },
+            function () { // out
+                //1. 반투명커버 불러오기
+                $(".cobox", this).addClass("cover").stop().fadeOut(200);
+                //2. 글자박스 내려가기
+                $(".txt", this).stop().animate({
+                    top: "100%"
+                }, 300); /// animate //////
+            }); ////////// hover ///////////////////
+
+    };
+    
+    
+    //1024px에서 설명글박스 조절
+    if ($(window).width() < 1024) {
+        $('.txt').css({
+            height: "23%"
+        })
+        $(".photobox").hover(
+            function () { // over
+                //1. 반투명커버 사라지기
+                $(".cobox", this).addClass("cover").stop().fadeIn(200);
+                //2. 글자박스 올라오기
+                $(".txt", this).stop().animate({
+                    top: "77%"
+                }, 300); /// animate //////
+            },
+            function () { // out
+                //1. 반투명커버 불러오기
+                $(".cobox", this).addClass("cover").stop().fadeOut(200);
+                //2. 글자박스 내려가기
+                $(".txt", this).stop().animate({
+                    top: "100%"
+                }, 300); /// animate //////
+            }); ////////// hover ///////////////////
+
+    };
+    
+    
+    
+    //600px에서 설명글박스 조절
+    if ($(window).width() < 600) {
+        $('.txt').css({
+            height: "20%"
+        })
+        $(".photobox").hover(
+            function () { // over
+                //1. 반투명커버 사라지기
+                $(".cobox", this).addClass("cover").stop().fadeIn(200);
+                //2. 글자박스 올라오기
+                $(".txt", this).stop().animate({
+                    top: "80%"
+                }, 300); /// animate //////
+            },
+            function () { // out
+                //1. 반투명커버 불러오기
+                $(".cobox", this).addClass("cover").stop().fadeOut(200);
+                //2. 글자박스 내려가기
+                $(".txt", this).stop().animate({
+                    top: "100%"
+                }, 300); /// animate //////
+            }); ////////// hover ///////////////////
+
+    };
+    
+    
+    
+    
+
 
 
 
