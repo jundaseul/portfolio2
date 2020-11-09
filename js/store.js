@@ -533,35 +533,35 @@ $(function () { //////////// jQB //////////////////////
                     clickable: true,
 
                 },
-/*
-                breakpoints: {
-                    640: {
-                        slidesPerView: "2",
-                        spaceBetween: "30",
-                    },
-                    768: {
-                        slidesPerView: "2",
-                        spaceBetween: "40",
+                /*
+                                breakpoints: {
+                                    640: {
+                                        slidesPerView: "2",
+                                        spaceBetween: "30",
+                                    },
+                                    768: {
+                                        slidesPerView: "2",
+                                        spaceBetween: "40",
 
-                    },
-                    1024: {
-                        slidesPerView: "3",
-                        spaceBetween: "30",
-                    },
-                    1240: {
-                        slidesPerView: "3",
-                        spaceBetween:"30",
-                    },
-                    1350: {
-                        slidesPerView: "4",
-                        spaceBetween:"20",
-                        pagination: {
-                            hiddenClass: 'swiper-pagination-hidden'
-                        },
-                        
-                    }
-                },*/
-                
+                                    },
+                                    1024: {
+                                        slidesPerView: "3",
+                                        spaceBetween: "30",
+                                    },
+                                    1240: {
+                                        slidesPerView: "3",
+                                        spaceBetween:"30",
+                                    },
+                                    1350: {
+                                        slidesPerView: "4",
+                                        spaceBetween:"20",
+                                        pagination: {
+                                            hiddenClass: 'swiper-pagination-hidden'
+                                        },
+                                        
+                                    }
+                                },*/
+
                 breakpoints: {
                     600: {
                         slidesPerView: "2",
@@ -580,7 +580,7 @@ $(function () { //////////// jQB //////////////////////
                         watchOverflow: "boolean",
                         slidesPerView: "4",
                         spaceBetween: "20",
-                        
+
                         pagination: {
                             hiddenClass: 'swiper-pagination-hidden'
                         }
@@ -667,8 +667,8 @@ $(function () { //////////// jQB //////////////////////
             }); ////////// hover ///////////////////
 
     };
-    
-    
+
+
     //1024px에서 설명글박스 조절
     if ($(window).width() < 1024) {
         $('.txt').css({
@@ -693,9 +693,9 @@ $(function () { //////////// jQB //////////////////////
             }); ////////// hover ///////////////////
 
     };
-    
-    
-    
+
+
+
     //600px에서 설명글박스 조절
     if ($(window).width() < 600) {
         $('.txt').css({
@@ -720,10 +720,25 @@ $(function () { //////////// jQB //////////////////////
             }); ////////// hover ///////////////////
 
     };
-    
-    
-    
-    
+
+
+
+
+
+    //380px에서 설명글박스 조절
+    if ($(window).width() < 380) {
+        $('.txt').css({
+            height: "20%"
+        })
+
+        $('.photobox').click(function () {
+            $('.photobox').unbind('mouseenter mouseleave');
+        });
+    };
+
+
+
+
 
 
 
