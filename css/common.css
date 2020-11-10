@@ -554,7 +554,7 @@
 }
 
 .info {
-    line-height: 40px;
+    line-height: 23px;
     letter-spacing: -1px;
 }
 
@@ -606,6 +606,10 @@
 .container p,
 .container li {
     display: block;
+}
+
+.container li{
+    height: 43px;
 }
 
 .container li a {

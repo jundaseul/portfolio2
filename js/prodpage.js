@@ -309,16 +309,12 @@ $(function () { /////// jQB ///////////////////////
     /*prodpage 탑버튼*/
     $('.prod_tbtn').click(function () {
 
-
         //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.8초 동안 부드럽게 해당 위치로 이동함.
         $('html').animate({
             scrollTop: "0px"
         }, 800);
 
         ////// animate ////////
-
-
-
 
     }); ///////////////// click ////////////////////////////
 
@@ -336,6 +332,15 @@ $(function () { /////// jQB ///////////////////////
     };
 
 
+
+    /*486px에서부터 이미지 트랜지션 빼기*/
+    if ($(window).width() < 486) {
+        $('.pImg2, .pImg3, .pImg4, .pImg5, .pImg6, .pImg7, .pImg8').css({
+            top: "0",
+            opacity: "1",
+            transition: "none"
+        })
+    };
 
 
 

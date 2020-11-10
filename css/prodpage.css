@@ -247,7 +247,9 @@
     top: -22px;
     text-align: center;
     border-radius: 50%;
+    border-top: 1px solid #b2b2b2;
 }
+
 
 .slideBtn img {
     width: 32%;

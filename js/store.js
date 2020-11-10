@@ -521,8 +521,8 @@ $(function () { //////////// jQB //////////////////////
             });
 
             var swiper = new Swiper('.swiper-container', {
-                slidesPerView: 1,
-                spaceBetween: 20,
+                slidesPerView: 2,
+                spaceBetween: 15,
                 //                navigation: { // 네비게이션 설정
                 //                    nextEl: '.swiper-button-next', // 다음 버튼 클래스명
                 //                    prevEl: '.swiper-button-prev', // 이번 버튼 클래스명
@@ -699,7 +699,7 @@ $(function () { //////////// jQB //////////////////////
     //600px에서 설명글박스 조절
     if ($(window).width() < 600) {
         $('.txt').css({
-            height: "20%"
+            height: "24%"
         })
         $(".photobox").hover(
             function () { // over
@@ -707,7 +707,7 @@ $(function () { //////////// jQB //////////////////////
                 $(".cobox", this).addClass("cover").stop().fadeIn(200);
                 //2. 글자박스 올라오기
                 $(".txt", this).stop().animate({
-                    top: "80%"
+                    top: "76%"
                 }, 300); /// animate //////
             },
             function () { // out
@@ -725,20 +725,44 @@ $(function () { //////////// jQB //////////////////////
 
 
 
-    //380px에서 설명글박스 조절
-    if ($(window).width() < 380) {
+    //486px에서 설명글박스 조절
+    if ($(window).width() < 486) {
         $('.txt').css({
-            height: "20%"
+            height: "23%"
         })
-
-        $('.photobox').click(function () {
-            $('.photobox').unbind('mouseenter mouseleave');
-        });
+        $(".photobox").hover(
+            function () { // over
+                //1. 반투명커버 사라지기
+                $(".cobox", this).addClass("cover").stop().fadeIn(200);
+                //2. 글자박스 올라오기
+                $(".txt", this).stop().animate({
+                    top: "100%"
+                }, 300); /// animate //////
+            },
+            function () { // out
+                //1. 반투명커버 불러오기
+                $(".cobox", this).addClass("cover").stop().fadeOut(200);
+                //2. 글자박스 내려가기
+                $(".txt", this).stop().animate({
+                    top: "100%"
+                }, 300); /// animate //////
+            }); ////////// hover ///////////////////
     };
 
 
 
 
+    /*store 탑버튼*/
+    $('.store_tbtn').click(function () {
+
+        //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.8초 동안 부드럽게 해당 위치로 이동함.
+        $('html').animate({
+            scrollTop: "0px"
+        }, 800);
+
+        ////// animate ////////
+
+    }); ///////////////// click ////////////////////////////
 
 
 
