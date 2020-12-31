@@ -545,11 +545,68 @@
 /*1024px이하*********************************************************/
 @media only screen and (max-width:1024px) {
 
+    /*메뉴*/
+    .menu_txt_area {
+        width: 45%;
+        padding-top: 10%;
+    }
+
+    .menu_bg {
+        width: 55%;
+    }
+
+    .menu_txt a {
+        font-size: 6.5vw;
+    }
+
+    .menu_txt {
+        line-height: 150px;
+    }
+
+    .menu_txt a:hover {
+        font-size: 8vw;
+    }
+
+    .gnb li {
+        font-size: 1.6rem;
+    }
+
+    .cbtn {
+        top: 7%;
+        width: 40px;
+    }
+
+    .menubtn img {
+        width: 30px;
+    }
+
+
+    /*메인페이지 */
+    #lbbox > .lbtn {
+        width: 38%;
+        height: 5.5%;
+        font-size: 2.5vw;
+        line-height: 72px;
+    }
+
+
     /*store 페이지*/
     .store_title {
         margin-bottom: 10%;
+        font-size: 2.9rem;
     }
 
+    .store_cate a {
+        font-size: 1.5rem;
+    }
+
+    .store_cate li + li::after {
+        height: 15px;
+    }
+
+    .besttit {
+        font-size: 1.5rem;
+    }
 
     /*all 제품*/
     .store_best.all > .gallery.all > .photobox {
@@ -587,9 +644,110 @@
         padding-top: 18%;
     }
 
+    /*룩북 상단*/
+    .notice_title.lb,
+    .notice_title {
+        font-size: 2.9rem;
+    }
+
+    #lookbook_wrap {
+        padding-top: 20%;
+    }
+
+    .lb_cont_txt {
+        margin-top: 60%;
+        padding: 5% 3%;
+    }
+
+    .lb_cont_tit {
+        font-size: 2rem;
+    }
+
+    .lb_cont_txt p {
+        font-size: 1.25rem;
+        line-height: 50px;
+    }
+
+    .lb_cont_txt .lbbtn_next {
+        top: 10%;
+        right: -7%;
+    }
+
+    .lbbtn_more {
+        font-size: 1.4rem;
+    }
+
+    .lbbtn_more.lb2btn_more {
+        bottom: 0;
+    }
 
 
+    /*contact 페이지*/
+    #contact_wrap {
+        width: 75%;
+    }
 
+    .contact_title {
+        font-size: 5.5vw;
+    }
+
+    .contact_left p {
+        font-size: 1.45rem;
+    }
+
+    .td_title {
+        font-size: 1.3rem;
+    }
+
+    #sendbtn {
+        bottom: -9%;
+        width: 22%;
+        height: 10%;
+        font-size: 1.5rem;
+    }
+
+    /*notice 페이지*/
+    .notice {
+        font-size: 1.6rem;
+    }
+
+    .pbtn img {
+        width: 23px;
+    }
+
+    .notice ol {
+        height: 100px;
+        line-height: 20px;
+    }
+
+    .notAns {
+        font-size: 1.5rem;
+        line-height: 40px;
+    }
+
+    /*푸터*/
+    .intit {
+        font-size: 1.5rem;
+    }
+
+    .info a {
+        font-size: 1.3rem;
+    }
+
+    .container li {
+        height: 55px;
+    }
+
+    .footer_logo {
+        font-size: 2rem;
+    }
+
+    .footer_bottom > p {
+        font-size: 1.2rem;
+        left: auto;
+        right: 0;
+        transform: translateX(0);
+    }
 
 }
 
@@ -948,10 +1106,6 @@
 
 
     /*메뉴팝업창 닫기버튼*/
-    .cbtn {
-        right: 5%;
-        width: 28px;
-    }
 
     /*룩북 페이지*/
     #lookbook_wrap {
@@ -1000,8 +1154,17 @@
 
 
 
-/*770px이하*********************************************************/
-@media only screen and (max-width:770px) {
+/*768px이하*********************************************************/
+@media only screen and (max-width:768px) {
+
+    /*메뉴*/
+    .menu_txt a {
+        font-size: 10vw;
+    }
+
+    .menu_txt {
+        line-height: 155px;
+    }
 
     /*로그인팝업*/
     .login {
@@ -1037,7 +1200,7 @@
     /*contact 페이지*/
     .contact_title {
         font-size: 6.5vw;
-        margin-left: -10%;
+        margin-left: -2%;
     }
 
     /*공지사항 페이지*/
@@ -1077,6 +1240,11 @@
     /*store 페이지*/
     .store_wrap {
         margin-top: 12%;
+    }
+
+    /*contact 페이지*/
+    #contact_wrap {
+        width: 90%;
     }
 
 }
@@ -1688,8 +1856,14 @@
 }
 
 
-/*486px이하*********************************************************/
-@media only screen and (max-width:486px) {
+/*480px이하*********************************************************/
+@media only screen and (max-width:480px) {
+
+    /*메뉴 닫기버튼*/
+    .cbtn {
+        width: 25px;
+        right: 4%;
+    }
 
     /*룩북 페이지*/
     .lbbtn_more {
@@ -1749,7 +1923,26 @@
         bottom: -1px;
     }
 
+
+    .store_title {
+        font-size: 2rem;
+    }
+
+    .store_cate a {
+        font-size: 1.1rem;
+    }
+
+    .store_cate li {
+        padding: 0 23px;
+    }
+
+    .cate_active {
+        font-size: 36px;
+        padding: 90px 0 80px 0;
+    }
+
     /*all 제품 간격 조절*/
+
     .store_best.all > .gallery.all > .photobox {
         width: 47.75%;
         margin: 0px 0 45% 0;
@@ -1764,10 +1957,24 @@
         margin-right: 0;
     }
 
-}
+    .notice_title.lb,
+    .notice_title {
+        font-size: 2rem;
+    }
 
-/*480px이하*********************************************************/
-@media only screen and (max-width:480px) {
+    .lb_cont_tit {
+        font-size: 1.6rem;
+    }
+
+    .lb_cont_txt p {
+        font-size: 1.1rem;
+    }
+
+    .lbbtn_more {
+        font-size: 1.25rem;
+
+    }
+
     .cart_btn {
         width: 25%;
         right: 6%;
@@ -1793,6 +2000,54 @@
         left: -111px;
     }
 
+    /*contact 페이지*/
+    .contact_left p {
+        font-size: 1.125rem;
+    }
+
+    .td_title {
+        font-size: 1rem;
+    }
+
+    #sendbtn {
+        bottom: -15%;
+        width: 35%;
+        height: 8.5%;
+        font-size: 1.3rem;
+    }
+
+    .notice {
+        font-size: 1.2rem;
+    }
+
+    .notice ol {
+        height: 70px;
+        line-height: 17px;
+    }
+
+    .pbtn img {
+        width: 17px;
+    }
+
+    .notAns {
+        padding: 6%;
+        font-size: 1rem;
+        line-height: 33px;
+    }
+
+    #lbbox > .lbtn {
+        width: 50%;
+        height: 7%;
+        font-size: 3.8vw;
+        line-height: 50px;
+    }
+
+
+    .l_input input,
+    .loginbtn input,
+    .loginbtn #lobtn {
+        height: 7vh;
+    }
 }
 
 /*462px이하*********************************************************/
@@ -1838,7 +2093,7 @@
 
     /*contact 페이지*/
     #contact_wrap {
-        width: 80%;
+        width: 88%;
         padding-top: 15.5%;
         padding-bottom: 30%;
     }
@@ -1850,6 +2105,7 @@
 
     .contact_title {
         font-size: 8vw;
+        margin-left: -3%;
     }
 
     .contact_right {
@@ -2039,7 +2295,12 @@
 
     .intit {
         letter-spacing: 2px;
-        padding-bottom: 8px;
+        padding-bottom: 15px;
+        font-size: 1rem;
+    }
+
+    .info a {
+        font-size: 0.9rem;
     }
 
     /*상단 박스*/
@@ -2063,8 +2324,8 @@
 
     /*탑버튼*/
     #tbtn {
-        width: 53px;
-        height: 53px;
+        width: 50px;
+        height: 50px;
         right: 30px;
         bottom: 128px;
     }
@@ -2077,6 +2338,7 @@
     .footer_bottom > p {
         text-align: right;
         bottom: 5px;
+        font-size: 0.85rem;
     }
 
     .info.container li {
@@ -2092,7 +2354,7 @@
 
     /*메뉴 팝업창*/
     .menu_txt_area {
-        padding: 30% 13%;
+        padding: 20% 13%;
     }
 
     .menu_txt a {
@@ -2130,8 +2392,8 @@
     }
 
     #btnj {
-        width: 40%;
-        height: 115%;
+        width: 35%;
+        height: 100%;
         bottom: -90%;
     }
 
@@ -2152,7 +2414,7 @@
 
     /*공지사항 페이지*/
     .notice_title {
-        font-size: 3.5vh;
+        font-size: 2rem;
     }
 
     .notice_title::before {
@@ -2168,6 +2430,30 @@
 
     .lbmore_tit.lbtit2 {
         left: -102px;
+    }
+
+    .page.lbbg.section.fp-auto-width-responsive {
+        height: 120vh !important;
+    }
+
+    .lbbtn_more {
+        bottom: -35%;
+    }
+
+    .lb_cont_img {
+        width: 98%;
+        margin-left: 1%;
+    }
+
+    .lbbtn_more.lb2btn_more {
+        bottom: -42%;
+    }
+
+    /*contact*/
+    #sendbtn {
+        width: 28%;
+        height: 8%;
+        font-size: 1.2rem;
     }
 
 }
@@ -2245,11 +2531,11 @@
     .cart_list {
         padding-left: 0;
     }
-    
-    .list_name small{
+
+    .list_name small {
         display: block;
     }
-    
+
 
     /*리스트 항목들 조정*/
     .cart_list li:nth-child(1) {
@@ -2314,8 +2600,8 @@
         width: 90%;
         padding-top: 25%;
     }
-    
-    .notice_footer{
+
+    .notice_footer {
         margin-top: 25%;
     }
 
@@ -2406,7 +2692,7 @@
         bottom: 35px;
         position: absolute;
         left: 14px;
-        font-size: 1.5625rem;
+        font-size: 1.5rem;
     }
 
     /*텍스트 박스 사라지게*/
@@ -2417,7 +2703,7 @@
     .mobmoreBtn {
         display: block;
         position: absolute;
-        bottom: 30px;
+        bottom: 20px;
     }
 
     .mobmoreBtn a {
@@ -2430,6 +2716,10 @@
 
     .lb_cont_img {
         height: 405px;
+    }
+
+    .lbbtn_more {
+        font-size: 1.1rem;
     }
 
     .mobnextBtn {
@@ -2492,36 +2782,21 @@
         display: block;
     }
 
-    /* 룩북 1페이지 이미지 크기 조절 ***********/
-/*
-    .lb1Img{
-        height: 52vh !important;
-    }
-    
-    .lbmore_cont .swiper-container{
-        height: 100%;
-    }
-    
-    .lbmore_cont .swiper-container .swiper-scrollbar{
-        bottom: -25px;
-    }
-*/
-    
     /*룩북 2페이지 이미지 크기 조절*/
     .lb2Img img {
         height: 57vh !important;
     }
-    
+
 
     .lbmore_tit.lbtit2 {
         left: -22px;
         top: -23px;
         text-shadow: 0 0 rgba(51, 51, 51, 0.9);
     }
-    
-    
-    
-    
+
+
+
+
 
     /*로그인화면************************************************/
     .l_input input,
@@ -2547,8 +2822,13 @@
     }
 
     .store_title {
-        font-size: 3.5vh;
+        font-size: 1.8rem;
         margin-left: -5%;
+    }
+
+    .notice_title.lb,
+    .notice_title {
+        font-size: 1.8rem;
     }
 
     .store_title::before {
@@ -2566,10 +2846,17 @@
 
 
     .cate_active {
-        font-size: 38px;
-        padding: 100px 0 80px 0;
+        font-size: 35px;
+        padding: 85px 0 80px 0;
     }
 
+    .store_cate a {
+        font-size: 1rem;
+    }
+
+    .besttit {
+        font-size: 1.3rem;
+    }
 
     /*이미지 설명박스 보이게*/
     #gallery.swiper-wrapper {
@@ -2625,6 +2912,10 @@
     }
 
 
-    
-    
+    .notice {
+        font-size: 1.1rem;
+    }
+
+
+
 }
