@@ -2,7 +2,7 @@
 
 /*풀페이지 플러그인 연결*/
 $(function () { //////////// jQB //////////////////////
-    console.log("연결됐니????????????????");
+    //console.log("연결됐니????????????????");
 
     
     
@@ -50,7 +50,7 @@ $(function(){ //////////// jQB //////////////////////
         */
         
         var isrc = $(this).find(".pbtn img").attr("src");
-        console.log(isrc);
+        //console.log(isrc);
         
         if (isrc === "images/minus.png") isrc = "images/plus.png";
         else isrc = "images/minus.png";
