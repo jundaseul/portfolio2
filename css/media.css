@@ -2782,15 +2782,10 @@
         display: block;
     }
 
-    /*룩북 2페이지 이미지 크기 조절*/
-    .lb2Img img {
+    /*룩북페이지 이미지 크기 조절 - 모바일*/
+    .lb1Img img, .lb2Img img {
         height: 57vh !important;
     }
-
-    .lb1Img img {
-        height: 57vh !important;
-    }
-
 
     .lbmore_tit.lbtit2 {
         left: -22px;
